@@ -3,7 +3,9 @@ div {
   box-sizing: border-box; }
 
 body {
+  font-family: "TT Norms Medium", sans-serif;
   margin: 0;
+  flex-direction: column;
   overflow-x: hidden; }
   body .screen {
     overflow: hidden; }
@@ -13,15 +15,139 @@ body {
     height: 100vh;
     width: 100vw;
     justify-content: flex-end; }
-  body #logo2 {
-    position: absolute;
-    border: 23px white solid;
-    border-radius: 50%;
-    height: 410px;
-    top: 150px;
-    right: 229px; }
-  body #vector11 {
-    position: absolute;
-    height: 600px;
-    right: -120px;
-    width: 637px; }
+    body #screen1_right #logo2 {
+      border-radius: 50%;
+      position: absolute;
+      border: 3vh white solid;
+      height: 55vh;
+      top: 19vh;
+      right: 29vh;
+      z-index: 2; }
+    body #screen1_right #vector10 {
+      z-index: 1;
+      position: absolute;
+      height: 79vh;
+      right: 0; }
+    body #screen1_right #vector11 {
+      z-index: 1;
+      position: absolute;
+      height: 79vh;
+      right: 0; }
+  body #header {
+    z-index: 3;
+    height: 78px;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0 126px 0 139px; }
+    body #header #logo {
+      align-items: center; }
+      body #header #logo #logo_outer {
+        width: 50px;
+        height: 50px;
+        left: 200px;
+        top: 40px;
+        background: linear-gradient(180.01deg, rgba(7, 101, 221, 0.348) -21.42%, rgba(255, 255, 255, 0.258) 108.72%);
+        border-radius: 13px; }
+        body #header #logo #logo_outer img {
+          height: 46px;
+          margin-top: 6px;
+          margin-left: 2px; }
+      body #header #logo span {
+        font-weight: 700;
+        font-size: 19px;
+        margin-left: 28px;
+        margin-bottom: 3px;
+        color: #2A356B; }
+    body #header #header_right {
+      height: 100%;
+      align-items: center;
+      padding-top: 18px;
+      color: white;
+      font-family: "TT Norms Medium", sans-serif;
+      font-weight: bold; }
+      body #header #header_right > span {
+        font-size: 15px;
+        margin-left: 46px; }
+      body #header #header_right #db_link {
+        width: 172px;
+        height: 52px;
+        margin-top: 6px;
+        align-items: center;
+        margin-left: 67px;
+        padding: 0 16px;
+        background-color: #2A356B;
+        border-radius: 11px;
+        justify-content: space-between; }
+        body #header #header_right #db_link #db_logo_outer {
+          background-color: rgba(255, 255, 255, 0.1);
+          padding: 8px;
+          border-radius: 5px; }
+          body #header #header_right #db_link #db_logo_outer img {
+            height: 12px; }
+        body #header #header_right #db_link span {
+          font-size: 14px; }
+  body #screen1_content {
+    margin-top: 20vh;
+    margin-left: 141px;
+    width: 345px;
+    flex-direction: column; }
+    body #screen1_content p {
+      font-family: "TT Norms Medium", sans-serif;
+      color: #0765DD;
+      font-size: 13px;
+      font-weight: 600;
+      margin: -1px 0 0 1px; }
+    body #screen1_content h1 {
+      font-size: 37px;
+      margin-top: 17px;
+      line-height: 47px; }
+      body #screen1_content h1 span {
+        height: 8px;
+        width: 8px;
+        background-color: #0269D6;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 10px 25px 10px 0; }
+    body #screen1_content p.desc {
+      font-size: 13.3px;
+      line-height: 26px;
+      color: #9EAFC5; }
+    body #screen1_content .info_button {
+      background-color: #0269D6;
+      border-radius: 12px;
+      color: white;
+      margin-top: 39px;
+      width: 161px;
+      height: 52px;
+      align-items: center;
+      padding: 0 25px 0 17px;
+      justify-content: space-between; }
+      body #screen1_content .info_button .user_outer {
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 4px;
+        height: 30px;
+        width: 30px; }
+        body #screen1_content .info_button .user_outer img {
+          margin-top: 6px;
+          margin-left: 3px; }
+      body #screen1_content .info_button span {
+        font-size: 13px;
+        font-weight: 600; }
+
+@font-face {
+  font-family: 'TT Norms Light';
+  src: url("TTNorms-Light.eot");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'TT Norms Medium';
+  src: url("TTNorms-Medium.eot");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("TTNorms-Regular.eot");
+  font-weight: normal;
+  font-style: normal; }
