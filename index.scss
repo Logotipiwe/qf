@@ -7,9 +7,42 @@ body{
   margin: 0;
   flex-direction: column;
   overflow-x: hidden;
+  background-color: #F3F5F9;
 
   .screen{
     overflow: hidden;
+  }
+
+  span.number{
+    font-family: "TT Norms Light", sans-serif;
+    color: rgba(42, 53, 107, .24);
+    font-size: 30px;
+    font-weight: 100;
+  }
+
+  span.title{
+    color: #2A356B;
+    font-weight: 700;
+    font-size: 33px;
+  }
+
+  p.text{
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 31px;
+    color: #9EAFC5;
+  }
+
+  div.dash{
+    width: 50px;
+    height: 5px;
+    background-color: #0269D6;
+  }
+
+  a{
+    color: #0765DD;
+    text-decoration: none;
+    font-weight: bold;
   }
 
   #screen1_right{
@@ -209,24 +242,12 @@ body{
     width: 61vw;
     padding-left: 7px;
 
-    span:first-child{
-      font-family: "TT Norms Light", sans-serif;
-      color: rgba(42, 53, 107, .24);
-      font-size: 30px;
-      font-weight: 100;
-    }
     span.title{
-      color: #2A356B;
-      font-weight: 700;
       margin-left: 35px;
-      font-size: 33px;
     }
-    p{
-      font-size: 13px;
+
+    p.text{
       width: 399px;
-      font-weight: 600;
-      line-height: 31px;
-      color: #9EAFC5;
       margin: 0 0 6px 81px;
     }
   }
@@ -254,6 +275,137 @@ body{
       right: 10vh;
       height: 379px;
       margin-top: 63px;
+    }
+  }
+
+  #screen3_content{
+    justify-self: flex-start;
+    width: 500px;
+    margin: 105px 0 0 140px;
+    flex-direction: column;
+
+    span.number{
+      height: max-content;
+    }
+
+    span.title{
+      margin-left: 23px;
+    }
+    p.text{
+      margin-top: 30px;
+      width: 474px;
+    }
+    a{
+      margin-top: 30px;
+    }
+  }
+
+  #screen4_back{
+    position: absolute;
+    left: 0;
+
+    #vector14{
+      position: absolute;
+      left: 0;
+      margin-top: 99px;
+      width: 100vw;
+    }
+
+    #vector15{
+      position: absolute;
+      width: 100vw;
+      margin-top: 220px;
+    }
+
+    #device_svg{
+      position: absolute;
+      left: 11.7vw;
+      width: 24.3vw;
+      margin-top: -34px;
+    }
+    #device_circle{
+      background-color: #0269D6;
+      border-radius: 50%;
+      height: 30.7vw;
+      width: 30.7vw;
+      position: absolute;
+      left: 8.8vw;
+      margin-top: 76px;
+    }
+  }
+
+  #screen4_content{
+    width: 500px;
+    align-self: flex-end;
+    margin-right: 144px;
+    margin-top: 78px;
+    flex-direction: column;
+
+    span.title{
+      margin-left: 19px;
+    }
+
+    p.text{
+      margin-top: 27px;
+      width: 442px;
+    }
+
+    a{
+      margin-top: 33px;
+    }
+  }
+
+  #screen5_back{
+    width: 0;
+
+    #logo4{
+      position: absolute;
+      right: -15px;
+      height: 29.7vw;
+      z-index: 8;
+      margin-top: 7vw;
+      opacity: 0.3;
+    }
+
+    #rect46{
+      position: absolute;
+      width: 100vw;
+      z-index: 7;
+    }
+
+    #screen5_vector12{
+      height: 64vw;
+      position: absolute;
+      margin-top: 2.2vw;
+      z-index: 8;
+    }
+
+    #screen5_boots{
+      position: absolute;
+      margin: 13.8vw 0 0 20.4vw;
+      z-index: 9;
+      width: 56.4vw;
+    }
+  }
+
+  #screen5_content{
+    z-index: 10;
+    margin: 6vw auto;
+    width: 440px;
+    flex-direction: column;
+    align-items: center;
+
+    span.number{
+      margin-bottom: 18px;
+      color: rgba(255,255,255,0.25);
+    }
+
+    span.title{
+      color: white;
+    }
+
+    p.text{
+      color: white;
     }
   }
 }

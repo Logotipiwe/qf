@@ -6,9 +6,32 @@ body {
   font-family: "TT Norms Medium", sans-serif;
   margin: 0;
   flex-direction: column;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  background-color: #F3F5F9; }
   body .screen {
     overflow: hidden; }
+  body span.number {
+    font-family: "TT Norms Light", sans-serif;
+    color: rgba(42, 53, 107, 0.24);
+    font-size: 30px;
+    font-weight: 100; }
+  body span.title {
+    color: #2A356B;
+    font-weight: 700;
+    font-size: 33px; }
+  body p.text {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 31px;
+    color: #9EAFC5; }
+  body div.dash {
+    width: 50px;
+    height: 5px;
+    background-color: #0269D6; }
+  body a {
+    color: #0765DD;
+    text-decoration: none;
+    font-weight: bold; }
   body #screen1_right {
     position: absolute;
     display: flex;
@@ -157,22 +180,10 @@ body {
     padding-bottom: 86px;
     width: 61vw;
     padding-left: 7px; }
-    body #screen2_content span:first-child {
-      font-family: "TT Norms Light", sans-serif;
-      color: rgba(42, 53, 107, 0.24);
-      font-size: 30px;
-      font-weight: 100; }
     body #screen2_content span.title {
-      color: #2A356B;
-      font-weight: 700;
-      margin-left: 35px;
-      font-size: 33px; }
-    body #screen2_content p {
-      font-size: 13px;
+      margin-left: 35px; }
+    body #screen2_content p.text {
       width: 399px;
-      font-weight: 600;
-      line-height: 31px;
-      color: #9EAFC5;
       margin: 0 0 6px 81px; }
   body #screen3_right {
     position: absolute;
@@ -192,6 +203,94 @@ body {
       right: 10vh;
       height: 379px;
       margin-top: 63px; }
+  body #screen3_content {
+    justify-self: flex-start;
+    width: 500px;
+    margin: 105px 0 0 140px;
+    flex-direction: column; }
+    body #screen3_content span.number {
+      height: max-content; }
+    body #screen3_content span.title {
+      margin-left: 23px; }
+    body #screen3_content p.text {
+      margin-top: 30px;
+      width: 474px; }
+    body #screen3_content a {
+      margin-top: 30px; }
+  body #screen4_back {
+    position: absolute;
+    left: 0; }
+    body #screen4_back #vector14 {
+      position: absolute;
+      left: 0;
+      margin-top: 99px;
+      width: 100vw; }
+    body #screen4_back #vector15 {
+      position: absolute;
+      width: 100vw;
+      margin-top: 220px; }
+    body #screen4_back #device_svg {
+      position: absolute;
+      left: 11.7vw;
+      width: 24.3vw;
+      margin-top: -34px; }
+    body #screen4_back #device_circle {
+      background-color: #0269D6;
+      border-radius: 50%;
+      height: 30.7vw;
+      width: 30.7vw;
+      position: absolute;
+      left: 8.8vw;
+      margin-top: 76px; }
+  body #screen4_content {
+    width: 500px;
+    align-self: flex-end;
+    margin-right: 144px;
+    margin-top: 78px;
+    flex-direction: column; }
+    body #screen4_content span.title {
+      margin-left: 19px; }
+    body #screen4_content p.text {
+      margin-top: 27px;
+      width: 442px; }
+    body #screen4_content a {
+      margin-top: 33px; }
+  body #screen5_back {
+    width: 0; }
+    body #screen5_back #logo4 {
+      position: absolute;
+      right: -15px;
+      height: 29.7vw;
+      z-index: 8;
+      margin-top: 7vw;
+      opacity: 0.3; }
+    body #screen5_back #rect46 {
+      position: absolute;
+      width: 100vw;
+      z-index: 7; }
+    body #screen5_back #screen5_vector12 {
+      height: 64vw;
+      position: absolute;
+      margin-top: 2.2vw;
+      z-index: 8; }
+    body #screen5_back #screen5_boots {
+      position: absolute;
+      margin: 13.8vw 0 0 20.4vw;
+      z-index: 9;
+      width: 56.4vw; }
+  body #screen5_content {
+    z-index: 10;
+    margin: 6vw auto;
+    width: 440px;
+    flex-direction: column;
+    align-items: center; }
+    body #screen5_content span.number {
+      margin-bottom: 18px;
+      color: rgba(255, 255, 255, 0.25); }
+    body #screen5_content span.title {
+      color: white; }
+    body #screen5_content p.text {
+      color: white; }
 
 @font-face {
   font-family: 'TT Norms Light';
