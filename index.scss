@@ -16,7 +16,7 @@ body{
     position: absolute;
     display: flex;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     justify-content: flex-end;
 
     #logo2{
@@ -43,7 +43,7 @@ body{
   }
 
   #header{
-    z-index: 3;
+    z-index: 10;
     height: 78px;
     align-items: flex-end;
     justify-content: space-between;
@@ -115,6 +115,7 @@ body{
   }
 
   #screen1_content{
+    z-index: 10;
     margin-top: 20vh;
     margin-left: 141px;
     width: 345px;
@@ -157,6 +158,8 @@ body{
       align-items: center;
       padding: 0 25px 0 17px;
       justify-content: space-between;
+      box-shadow: 0 12px 21px -9px rgba(7, 101, 221, 0.64);
+      margin-bottom: 20px;
 
       .user_outer{
         background-color: rgba(255,255,255,0.1);
@@ -175,6 +178,82 @@ body{
         font-size: 13px;
         font-weight: 600;
       }
+    }
+  }
+
+  #screen2_left{
+    height: 100%;
+
+    img{
+      height: 800px;
+      z-index: 8;
+      margin-top: -360px;
+    }
+
+    span{
+      z-index: 9;
+      height: max-content;
+      font-weight: 700;
+      color: #2A356B;
+      font-size: 103px;
+      position: absolute;
+      white-space: nowrap;
+      margin: 76px 0 0 -265px;
+    }
+  }
+
+  #screen2_content{
+    align-items: center;
+    justify-self: flex-end;
+    padding-bottom: 86px;
+    width: 61vw;
+    padding-left: 7px;
+
+    span:first-child{
+      font-family: "TT Norms Light", sans-serif;
+      color: rgba(42, 53, 107, .24);
+      font-size: 30px;
+      font-weight: 100;
+    }
+    span.title{
+      color: #2A356B;
+      font-weight: 700;
+      margin-left: 35px;
+      font-size: 33px;
+    }
+    p{
+      font-size: 13px;
+      width: 399px;
+      font-weight: 600;
+      line-height: 31px;
+      color: #9EAFC5;
+      margin: 0 0 6px 81px;
+    }
+  }
+
+  #screen3_right{
+    position: absolute;
+    right: 0;
+
+    #vector12{
+      position: absolute;
+      height: 730px;
+      right: 0;
+      margin-top: -31px;
+    }
+
+    #screen3_vector11{
+      position: absolute;
+      right: 0;
+      height: 665px;
+      margin-top: -111px;
+    }
+
+    #group17{
+      position: absolute;
+      right: 10vh;
+      height: 379px;
+      margin-top: 63px;
     }
   }
 }

@@ -13,7 +13,7 @@ body {
     position: absolute;
     display: flex;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     justify-content: flex-end; }
     body #screen1_right #logo2 {
       border-radius: 50%;
@@ -34,7 +34,7 @@ body {
       height: 79vh;
       right: 0; }
   body #header {
-    z-index: 3;
+    z-index: 10;
     height: 78px;
     align-items: flex-end;
     justify-content: space-between;
@@ -87,6 +87,7 @@ body {
         body #header #header_right #db_link span {
           font-size: 14px; }
   body #screen1_content {
+    z-index: 10;
     margin-top: 20vh;
     margin-left: 141px;
     width: 345px;
@@ -121,7 +122,9 @@ body {
       height: 52px;
       align-items: center;
       padding: 0 25px 0 17px;
-      justify-content: space-between; }
+      justify-content: space-between;
+      box-shadow: 0 12px 21px -9px rgba(7, 101, 221, 0.64);
+      margin-bottom: 20px; }
       body #screen1_content .info_button .user_outer {
         background-color: rgba(255, 255, 255, 0.1);
         border-radius: 4px;
@@ -133,6 +136,62 @@ body {
       body #screen1_content .info_button span {
         font-size: 13px;
         font-weight: 600; }
+  body #screen2_left {
+    height: 100%; }
+    body #screen2_left img {
+      height: 800px;
+      z-index: 8;
+      margin-top: -360px; }
+    body #screen2_left span {
+      z-index: 9;
+      height: max-content;
+      font-weight: 700;
+      color: #2A356B;
+      font-size: 103px;
+      position: absolute;
+      white-space: nowrap;
+      margin: 76px 0 0 -265px; }
+  body #screen2_content {
+    align-items: center;
+    justify-self: flex-end;
+    padding-bottom: 86px;
+    width: 61vw;
+    padding-left: 7px; }
+    body #screen2_content span:first-child {
+      font-family: "TT Norms Light", sans-serif;
+      color: rgba(42, 53, 107, 0.24);
+      font-size: 30px;
+      font-weight: 100; }
+    body #screen2_content span.title {
+      color: #2A356B;
+      font-weight: 700;
+      margin-left: 35px;
+      font-size: 33px; }
+    body #screen2_content p {
+      font-size: 13px;
+      width: 399px;
+      font-weight: 600;
+      line-height: 31px;
+      color: #9EAFC5;
+      margin: 0 0 6px 81px; }
+  body #screen3_right {
+    position: absolute;
+    right: 0; }
+    body #screen3_right #vector12 {
+      position: absolute;
+      height: 730px;
+      right: 0;
+      margin-top: -31px; }
+    body #screen3_right #screen3_vector11 {
+      position: absolute;
+      right: 0;
+      height: 665px;
+      margin-top: -111px; }
+    body #screen3_right #group17 {
+      position: absolute;
+      right: 10vh;
+      height: 379px;
+      margin-top: 63px; }
 
 @font-face {
   font-family: 'TT Norms Light';
