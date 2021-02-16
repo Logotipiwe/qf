@@ -1,0 +1,13 @@
+version: '3.6'
+
+services:
+  test_php:
+    container_name: test_php
+    build:
+      ./
+    volumes:
+      - ./:/var/www/html/
+    expose:
+      - 80
+    ports:
+      - 80:80
