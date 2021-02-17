@@ -4,30 +4,35 @@
   font-weight: 100;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'TT Norms';
   src: url('fonts/TTNorms-ExtraLight.woff');
   font-weight: 200;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'TT Norms';
   src: url('fonts/TTNorms-Light.woff');
   font-weight: 300;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'TT Norms';
   src: url('fonts/TTNorms-Regular.woff');
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'TT Norms';
   src: url('fonts/TTNorms-Medium.woff');
   font-weight: 500;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'TT Norms';
   src: url('fonts/TTNorms-Bold.woff');
@@ -68,7 +73,6 @@ body {
     line-height: 31px;
     font-size: 14.2px;
     color: #9EAFC5;
-    width: 450px;
   }
 
   div.dash {
@@ -83,13 +87,13 @@ body {
     font-weight: 500;
   }
 
-  .link_arrow{
-      margin-left: 11px;
-      width: 18px;
-      margin-bottom: 1px;
+  .link_arrow {
+    margin-left: 11px;
+    width: 18px;
+    margin-bottom: 1px;
   }
 
-  #screen1_back{
+  #screen1_back {
     height: 100vh;
     position: absolute;
     width: 100vw;
@@ -97,62 +101,18 @@ body {
     background-size: contain;
   }
 
-  #screen1_right {
-    position: absolute;
-    display: flex;
-    height: 100vh;
-    width: 100%;
-    justify-content: flex-end;
-
-    #logo2 {
-      border-radius: 50%;
-      position: absolute;
-      border: 3vh white solid;
-      height: 55vh;
-      top: 19vh;
-      right: 29vh;
-      z-index: 2;
-    }
-
-    #vector10 {
-      z-index: 1;
-      position: absolute;
-      height: 79vh;
-      right: 0;
-    }
-
-    #vector11 {
-      z-index: 1;
-      position: absolute;
-      height: 79vh;
-      right: 0;
-    }
-  }
-
   #header {
     z-index: 10;
     height: 78px;
     align-items: flex-end;
     justify-content: space-between;
-    padding: 0 110px 0 139px;
+    padding: 0 8.1vw 0 10.2vw;
 
     #logo {
       align-items: center;
 
-      #logo_outer {
-        width: 50px;
+      img {
         height: 50px;
-        left: 200px;
-        top: 40px;
-        background: linear-gradient(
-                        180.01deg, rgba(7, 101, 221, 0.348) -21.42%, rgba(255, 255, 255, 0.258) 108.72%);
-        border-radius: 13px;
-
-        img {
-          height: 46px;
-          margin-top: 6px;
-          margin-left: 2px;
-        }
       }
 
       span {
@@ -177,9 +137,10 @@ body {
         box-sizing: border-box;
         font-size: 13px;
         margin-left: 52px;
-        color: rgba(255,255,255,0.5);
+        color: rgba(255, 255, 255, 0.5);
       }
-      >nav:first-child{
+
+      > nav.selected {
         font-size: 14px;
         color: white;
       }
@@ -216,15 +177,16 @@ body {
 
   #screen1_content {
     z-index: 10;
-    margin-top: 20vh;
-    margin-left: 141px;
-    width: 345px;
+    margin-top: 19.3vh;
+    margin-left: 10.3vw;
+    width: 350px;
     flex-direction: column;
 
-    p {
+    p:first-of-type {
       font-size: 12.3px;
       font-weight: 700;
       margin: -1px 0 0 1px;
+      color: #0765DD;
     }
 
     h1 {
@@ -243,10 +205,8 @@ body {
       }
     }
 
-    p.desc {
-      font-size: 13.8px;
-      line-height: 26px;
-      color: #9EAFC5;
+    p.text {
+      margin: 0;
     }
 
     .info_button {
@@ -380,11 +340,11 @@ body {
     }
   }
 
-  #screen4_device{
+  #screen4_device {
     position: absolute;
     left: 0;
 
-    img{
+    img {
       position: absolute;
       left: 6vw;
       width: 36vw;
@@ -393,7 +353,7 @@ body {
     }
   }
 
-  #screen4_back_img{
+  #screen4_back_img {
     background: url("img/screen4/back.svg") no-repeat center;
     background-size: cover;
     width: 100vw;
@@ -545,13 +505,15 @@ body {
       animation: 1s ease-in-out forwards;
     }
 
-    .anim_right{
+    .anim_right {
       animation-name: slide_right;
     }
-    .anim_left{
+
+    .anim_left {
       animation-name: slide_left;
     }
-    .anim_top{
+
+    .anim_top {
       animation-name: slide_top;
     }
   }
@@ -572,6 +534,7 @@ $anim_length: 200px;
     left: 0;
   }
 }
+
 @keyframes slide_left {
   0% {
     opacity: 0;
@@ -585,6 +548,7 @@ $anim_length: 200px;
     right: 0;
   }
 }
+
 @keyframes slide_top {
   0% {
     opacity: 0;
@@ -599,6 +563,115 @@ $anim_length: 200px;
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1601px) {
+  body {
+    span.title{
+      font-size: 48px;
+    }
+    p.text{
+      font-size: 20px;
+      line-height: 42px;
+    }
+    span.number{
+      font-size: 36px;
+    }
+    #header {
+      height: 116px;
 
+      #logo {
+        img {
+          height: 70px;
+        }
+        span{
+          font-size: 26.2px;
+          margin-left: 43px;
+        }
+      }
+
+      #header_right{
+        #db_link{
+          width: 244px;
+          height: 73px;
+          padding: 0 22px;
+          margin-left: 95px;
+
+          #db_logo_outer{
+            padding: 11px;
+
+            img{
+              height: 17px;
+            }
+          }
+
+          span{
+            font-size: 19px;
+            margin-right: 8px;
+          }
+        }
+
+        >nav{
+          font-size: 20px;
+          margin-left: 72px;
+        }
+
+        >nav.selected{
+          font-size: 20px;
+        }
+      }
+    }
+
+    #screen1_content{
+      width: 460px;
+
+      p:first-of-type{
+        font-size: 17.4px;
+      }
+
+      h1{
+        font-size: 52px;
+        margin-top: 33px;
+        line-height: 56px;
+
+        span{
+          height: 11px;
+          width: 11px;
+          margin: 0 31px 13px 0;
+        }
+      }
+
+      p.desc{
+        font-size: 20px;
+        line-height: 41px;
+        font-weight: 500;
+      }
+
+      .info_button{
+        margin-top: 52px;
+        width: 227px;
+        height: 74px;
+        padding: 0 33px 0 25px;
+        span{
+          font-size: 19px;
+        }
+      }
+    }
+
+    #screen2_left{
+      margin-top: -480px;
+      width: 950px;
+      height: 950px;
+    }
+
+    #screen2_content{
+      padding-bottom: 118px;
+
+      p.text{
+        width: 564px;
+        margin: 2px 41px 8px 113px;
+      }
+      span.title{
+        margin-left: 53px;
+      }
+    }
+  }
 }
