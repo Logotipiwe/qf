@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="screen" style="flex-direction: column; height: 100vh">
-    <div id="screen1_right">
+    <div id="screen1_right" class="to_anim anim_left">
         <img src="img/screen1/Rectangle37.svg" alt="">
         <img src="img/screen1/logo2.png" alt="" id="logo2">
         <img src="img/screen1/Vector10.svg" alt="" id="vector10">
@@ -35,25 +35,27 @@
             </div>
         </div>
     </div>
-    <div id="screen1_content">
-        <p>OUR SERVICE WILL HELP YOU, JOIN NOW</p>
-        <h1><span class="dot"></span>Welcome to the Quantum Flips</h1>
-        <p class="desc">Quantum Flips provides exclusive information on bots, analytics / market overview, and bot
-            updates</p>
-        <div class="info_button">
-            <div class="user_outer">
-                <img src="img/screen1/user_circle.svg" alt="">
+    <div class="to_anim anim_right">
+        <div id="screen1_content">
+            <p>OUR SERVICE WILL HELP YOU, JOIN NOW</p>
+            <h1><span class="dot"></span>Welcome to the Quantum Flips</h1>
+            <p class="desc">Quantum Flips provides exclusive information on bots, analytics / market overview, and bot
+                updates</p>
+            <div class="info_button">
+                <div class="user_outer">
+                    <img src="img/screen1/user_circle.svg" alt="">
+                </div>
+                <span>SOLD OUT</span>
             </div>
-            <span>SOLD OUT</span>
         </div>
     </div>
 </div>
 <div class="screen" style="height: 49vh; justify-content: space-between">
-    <div id="screen2_left">
+    <div id="screen2_left" class="to_anim anim_right">
         <img src="img/screen2/Vector13.svg" alt="">
         <span>quantum Flips</span>
     </div>
-    <div id="screen2_content">
+    <div id="screen2_content" class="to_anim anim_top">
         <span class="number">01</span>
         <span class="title">Quick Flips</span>
         <p class="text">Thanks to our fast custom monitors, we track over 100 sites from the EU, USA and Asia, such as:
@@ -61,31 +63,38 @@
     </div>
 </div>
 <div class="screen" style="height: 84vh;">
-    <div id="screen3_right">
+    <div id="screen3_right" class="to_anim anim_left">
         <img src="img/screen3/Vector12.svg" id="vector12" alt="">
         <img src="img/screen3/Vector11.svg" id="screen3_vector11" alt="">
         <img src="img/screen3/Group17.svg" id="group17" alt="">
     </div>
-    <div id="screen3_content">
-        <div class="dash"></div>
-        <div style="margin-top: 45px">
-            <span class="number">02</span>
-            <span class="title">Monitors</span>
+    <div class="to_anim anim_right">
+        <div id="screen3_content">
+            <div class="dash"></div>
+            <div style="margin-top: 45px">
+                <span class="number">02</span>
+                <span class="title">Monitors</span>
+            </div>
+            <p class="text">With many years of experience, we provide the best service and support for any need: from
+                general requests to setting up bots, we are always ready to help our members to buy several products
+                every
+                week</p>
+            <a href="...">See more information --></a>
         </div>
-        <p class="text">With many years of experience, we provide the best service and support for any need: from
-            general requests to setting up bots, we are always ready to help our members to buy several products every
-            week</p>
-        <a href="...">See more information --></a>
     </div>
 </div>
 <div class="screen" style="height: 81vh;flex-direction: column">
     <div id="screen4_back">
-        <img src="img/screen4/Vector14.svg" id="vector14" alt="">
-        <img src="img/screen4/Vector15.svg" id="vector15" alt="">
-        <div id="device_circle"></div>
-        <img src="img/screen4/Device.svg" id="device_svg" alt="">
+        <div class="to_anim anim_top">
+            <img src="img/screen4/Vector14.svg" id="vector14" alt="">
+            <img src="img/screen4/Vector15.svg" id="vector15" alt="">
+        </div>
+        <div class="to_anim anim_right">
+            <div id="device_circle"></div>
+            <img src="img/screen4/Device.svg" id="device_svg" alt="">
+        </div>
     </div>
-    <div id="screen4_content">
+    <div id="screen4_content" class="to_anim anim_left">
         <div class="dash"></div>
         <div style="margin-top: 35px">
             <span class="number">03</span>
@@ -97,14 +106,14 @@
         <a href="...">See more information --></a>
     </div>
 </div>
-<div class="screen" style="height: 85vh">
-    <div id="screen5_back">
+<div class="screen" style="height: 89vh">
+    <div id="screen5_back" class="to_anim anim_top">
         <img src="img/screen5/logo4.svg" alt="" id="logo4">
         <img src="img/screen5/Rectangle46.svg" alt="" id="rect46">
         <img src="img/screen5/Vector12.svg" alt="" id="screen5_vector12">
         <img src="img/screen5/boots.png" alt="" id="screen5_boots">
     </div>
-    <div id="screen5_content">
+    <div id="screen5_content" class="to_anim anim_top">
         <span class="number">04</span>
         <span class="title">Drop-Recaps</span>
         <p class="text">With many years of experience, we provide the best service and support for any need: from
@@ -112,8 +121,39 @@
             week</p>
     </div>
 </div>
-<div class="screen" style="height: 100vh"></div>
-<div class="screen" style="height: 100vh"></div>
+<div class="screen" style="height: 110vh">
+    <div id="screen6_back">
+        <img src="img/screen6/Vector14.svg" alt="" id="screen6_vector14">
+        <img src="img/screen6/Vector13.svg" alt="" id="screen6_vector13">
+    </div>
+    <div id="screen6_content">
+        <div class="row">
+            <div style="flex-basis: 36%">
+                <h2>Сколько стоит подписка?</h2>
+                <p>Вступление - 2000 руб</p>
+                <p>Ежемесячное продление - 2000 руб</p>
+            </div>
+            <div style="flex-basis: 67%">
+                <h2>Как активировать ключ?</h2>
+                <p>Перейдите в *ссылка на логин в дашборд* и авторизируйтесь через свой дискорд. После чего вы сможете
+                    привязать ключ.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div style="flex-basis: 50%">
+                <h2>Можно ли перепродавать слоты?</h2>
+                <p>Перепродажа строго запрещена, все бернеры будут забанены без возврата денежных средств.</p>
+            </div>
+            <div style="flex-basis: 50%">
+                <h2>Когда следующий ресток?</h2>
+                <p>О всех планируемых рестоках мы будем уведомлять через нашу группу ВК.</p>
+            </div>
+        </div>
+        <div class="center">
+            <img src="img/screen6/logo.svg" alt="">
+            <span>Quantum Flips</span>
+        </div>
+    </div>
+</div>
 </body>
-</html>Ох уж этот тяжкий выбор. По крайней мере одном из вариантов есть сила истинности)
-Мне даже что-то подсказывает в каком именно
+</html>

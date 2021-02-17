@@ -1,58 +1,59 @@
-div{
+div {
   display: flex;
   box-sizing: border-box;
 }
-body{
+
+body {
   font-family: "TT Norms Medium", sans-serif;
   margin: 0;
   flex-direction: column;
   overflow-x: hidden;
   background-color: #F3F5F9;
 
-  .screen{
+  .screen {
     overflow: hidden;
   }
 
-  span.number{
+  span.number {
     font-family: "TT Norms Light", sans-serif;
     color: rgba(42, 53, 107, .24);
     font-size: 30px;
     font-weight: 100;
   }
 
-  span.title{
+  span.title {
     color: #2A356B;
     font-weight: 700;
     font-size: 33px;
   }
 
-  p.text{
+  p.text {
     font-size: 13px;
     font-weight: 600;
     line-height: 31px;
     color: #9EAFC5;
   }
 
-  div.dash{
+  div.dash {
     width: 50px;
     height: 5px;
     background-color: #0269D6;
   }
 
-  a{
+  a {
     color: #0765DD;
     text-decoration: none;
     font-weight: bold;
   }
 
-  #screen1_right{
+  #screen1_right {
     position: absolute;
     display: flex;
     height: 100vh;
     width: 100%;
     justify-content: flex-end;
 
-    #logo2{
+    #logo2 {
       border-radius: 50%;
       position: absolute;
       border: 3vh white solid;
@@ -61,13 +62,15 @@ body{
       right: 29vh;
       z-index: 2;
     }
-    #vector10{
+
+    #vector10 {
       z-index: 1;
       position: absolute;
       height: 79vh;
       right: 0;
     }
-    #vector11{
+
+    #vector11 {
       z-index: 1;
       position: absolute;
       height: 79vh;
@@ -75,33 +78,33 @@ body{
     }
   }
 
-  #header{
+  #header {
     z-index: 10;
     height: 78px;
     align-items: flex-end;
     justify-content: space-between;
     padding: 0 126px 0 139px;
 
-    #logo{
+    #logo {
       align-items: center;
-      #logo_outer{
+
+      #logo_outer {
         width: 50px;
         height: 50px;
         left: 200px;
         top: 40px;
         background: linear-gradient(
-                        180.01deg
-                , rgba(7, 101, 221, 0.348) -21.42%, rgba(255, 255, 255, 0.258) 108.72%);
+                        180.01deg, rgba(7, 101, 221, 0.348) -21.42%, rgba(255, 255, 255, 0.258) 108.72%);
         border-radius: 13px;
 
-        img{
+        img {
           height: 46px;
           margin-top: 6px;
           margin-left: 2px;
         }
       }
 
-      span{
+      span {
         font-weight: 700;
         font-size: 19px;
         margin-left: 28px;
@@ -110,18 +113,20 @@ body{
       }
     }
 
-    #header_right{
+    #header_right {
       height: 100%;
       align-items: center;
       padding-top: 18px;
       color: white;
       font-family: "TT Norms Medium", sans-serif;
       font-weight: bold;
-      >span{
+
+      > span {
         font-size: 15px;
         margin-left: 46px;
       }
-      #db_link{
+
+      #db_link {
         width: 172px;
         height: 52px;
         margin-top: 6px;
@@ -132,29 +137,31 @@ body{
         border-radius: 11px;
         justify-content: space-between;
 
-        #db_logo_outer{
+        #db_logo_outer {
           background-color: rgba(255, 255, 255, 0.1);
           padding: 8px;
           border-radius: 5px;
-          img{
+
+          img {
             height: 12px;
           }
         }
-        span{
+
+        span {
           font-size: 14px;
         }
       }
     }
   }
 
-  #screen1_content{
+  #screen1_content {
     z-index: 10;
     margin-top: 20vh;
     margin-left: 141px;
     width: 345px;
     flex-direction: column;
 
-    p{
+    p {
       font-family: "TT Norms Medium", sans-serif;
       color: #0765DD;
       font-size: 13px;
@@ -162,12 +169,12 @@ body{
       margin: -1px 0 0 1px;
     }
 
-    h1{
+    h1 {
       font-size: 37px;
       margin-top: 17px;
       line-height: 47px;
 
-      span{
+      span {
         height: 8px;
         width: 8px;
         background-color: #0269D6;
@@ -176,12 +183,14 @@ body{
         margin: 10px 25px 10px 0;
       }
     }
-    p.desc{
+
+    p.desc {
       font-size: 13.3px;
       line-height: 26px;
       color: #9EAFC5;
     }
-    .info_button{
+
+    .info_button {
       background-color: #0269D6;
       border-radius: 12px;
       color: white;
@@ -194,36 +203,36 @@ body{
       box-shadow: 0 12px 21px -9px rgba(7, 101, 221, 0.64);
       margin-bottom: 20px;
 
-      .user_outer{
-        background-color: rgba(255,255,255,0.1);
+      .user_outer {
+        background-color: rgba(255, 255, 255, 0.1);
         //background-color: red;
         border-radius: 4px;
         height: 30px;
         width: 30px;
 
-        img{
+        img {
           margin-top: 6px;
           margin-left: 3px;
         }
       }
 
-      span{
+      span {
         font-size: 13px;
         font-weight: 600;
       }
     }
   }
 
-  #screen2_left{
+  #screen2_left {
     height: 100%;
 
-    img{
+    img {
       height: 800px;
       z-index: 8;
       margin-top: -360px;
     }
 
-    span{
+    span {
       z-index: 9;
       height: max-content;
       font-weight: 700;
@@ -235,42 +244,42 @@ body{
     }
   }
 
-  #screen2_content{
+  #screen2_content {
     align-items: center;
     justify-self: flex-end;
     padding-bottom: 86px;
     width: 61vw;
     padding-left: 7px;
 
-    span.title{
+    span.title {
       margin-left: 35px;
     }
 
-    p.text{
+    p.text {
       width: 399px;
       margin: 0 0 6px 81px;
     }
   }
 
-  #screen3_right{
+  #screen3_right {
     position: absolute;
     right: 0;
 
-    #vector12{
+    #vector12 {
       position: absolute;
       height: 730px;
       right: 0;
       margin-top: -31px;
     }
 
-    #screen3_vector11{
+    #screen3_vector11 {
       position: absolute;
       right: 0;
       height: 665px;
       margin-top: -111px;
     }
 
-    #group17{
+    #group17 {
       position: absolute;
       right: 10vh;
       height: 379px;
@@ -278,52 +287,55 @@ body{
     }
   }
 
-  #screen3_content{
+  #screen3_content {
     justify-self: flex-start;
     width: 500px;
     margin: 105px 0 0 140px;
     flex-direction: column;
 
-    span.number{
+    span.number {
       height: max-content;
     }
 
-    span.title{
+    span.title {
       margin-left: 23px;
     }
-    p.text{
+
+    p.text {
       margin-top: 30px;
       width: 474px;
     }
-    a{
+
+    a {
       margin-top: 30px;
     }
   }
 
-  #screen4_back{
+  #screen4_back {
     position: absolute;
     left: 0;
 
-    #vector14{
+    #vector14 {
       position: absolute;
       left: 0;
       margin-top: 99px;
       width: 100vw;
     }
 
-    #vector15{
+    #vector15 {
       position: absolute;
       width: 100vw;
       margin-top: 220px;
     }
 
-    #device_svg{
+    #device_svg {
       position: absolute;
       left: 11.7vw;
       width: 24.3vw;
-      margin-top: -34px;
+      margin-top: -3vw;
     }
-    #device_circle{
+
+    #device_circle {
       background-color: #0269D6;
       border-radius: 50%;
       height: 30.7vw;
@@ -334,53 +346,53 @@ body{
     }
   }
 
-  #screen4_content{
+  #screen4_content {
     width: 500px;
     align-self: flex-end;
     margin-right: 144px;
     margin-top: 78px;
     flex-direction: column;
 
-    span.title{
+    span.title {
       margin-left: 19px;
     }
 
-    p.text{
+    p.text {
       margin-top: 27px;
       width: 442px;
     }
 
-    a{
+    a {
       margin-top: 33px;
     }
   }
 
-  #screen5_back{
+  #screen5_back {
     width: 0;
 
-    #logo4{
+    #logo4 {
       position: absolute;
-      right: -15px;
+      right: -100vw;
       height: 29.7vw;
       z-index: 8;
       margin-top: 7vw;
       opacity: 0.3;
     }
 
-    #rect46{
+    #rect46 {
       position: absolute;
       width: 100vw;
       z-index: 7;
     }
 
-    #screen5_vector12{
+    #screen5_vector12 {
       height: 64vw;
       position: absolute;
       margin-top: 2.2vw;
       z-index: 8;
     }
 
-    #screen5_boots{
+    #screen5_boots {
       position: absolute;
       margin: 13.8vw 0 0 20.4vw;
       z-index: 9;
@@ -388,39 +400,178 @@ body{
     }
   }
 
-  #screen5_content{
+  #screen5_content {
     z-index: 10;
     margin: 6vw auto;
     width: 440px;
     flex-direction: column;
     align-items: center;
 
-    span.number{
+    span.number {
       margin-bottom: 18px;
-      color: rgba(255,255,255,0.25);
+      color: rgba(255, 255, 255, 0.25);
     }
 
-    span.title{
+    span.title {
       color: white;
     }
 
-    p.text{
+    p.text {
       color: white;
     }
   }
+
+  #screen6_back {
+    width: 0;
+
+    #screen6_vector14 {
+      left: 0;
+      margin-top: -2vw;
+      height: 55vw;
+    }
+
+    #screen6_vector13 {
+      right: -2vw;
+      position: absolute;
+      height: 43vw;
+      margin-top: 0;
+    }
+  }
+
+  #screen6_content {
+    margin: 10.8vw auto;
+    flex-direction: column;
+    width: 81vw;
+    margin-left: 10.3vw;
+
+    .row {
+      > div {
+        padding: 46px 0 0 46px;
+        background-color: rgba(255, 255, 255, 0.33);
+        flex-direction: column;
+        height: 189px;
+        margin: 19px 0 19px 0;
+        border-radius: 14px;
+
+        h2 {
+          margin: 0 0 20px 0;
+          color: #2A356B;
+          font-size: 21px;
+        }
+
+        p {
+          color: rgba(42, 53, 107, 0.29);
+          margin: 0;
+          font-size: 15px;
+          line-height: 29px;
+        }
+      }
+    }
+
+    .row:first-child > div {
+      background-color: white;
+    }
+
+    .row > div:nth-child(2) {
+      margin-left: 2.4vw;
+    }
+
+    .center {
+      margin: 110px auto;
+      align-items: center;
+
+      img {
+        height: 60px;
+      }
+
+      span {
+        color: #2A356A;
+        font-size: 21px;
+        font-weight: 600;
+        margin-left: 16px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .screen .to_anim {
+    position: relative;
+    opacity: 0;
+  }
+
+  .screen.anim {
+    .to_anim {
+      animation: 1s ease-in-out forwards;
+    }
+
+    .anim_right{
+      animation-name: slide_right;
+    }
+    .anim_left{
+      animation-name: slide_left;
+    }
+    .anim_top{
+      animation-name: slide_top;
+    }
+  }
 }
+
+$anim_length: 200px;
+
+@keyframes slide_right {
+  0% {
+    opacity: 0;
+    left: -$anim_length;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+@keyframes slide_left {
+  0% {
+    opacity: 0;
+    right: -$anim_length;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    right: 0;
+  }
+}
+@keyframes slide_top {
+  0% {
+    opacity: 0;
+    bottom: -$anim_length;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+
 @font-face {
   font-family: 'TT Norms Light';
   src: url('TTNorms-Light.eot');
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'TT Norms Medium';
   src: url('TTNorms-Medium.eot');
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'TT Norms';
   src: url('TTNorms-Regular.eot');
