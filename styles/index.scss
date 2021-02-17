@@ -317,8 +317,12 @@ body {
   }
 
   #screen4{
-    height: 81vh;
+    height: 82vh;
     flex-direction: column;
+
+    background: url(../img/screen4/back.svg) no-repeat center;
+    background-size: cover;
+    background-position: top;
   }
 
   #screen4_device {
@@ -339,7 +343,7 @@ body {
   }
 
   #screen4_back_img {
-    background: url(../img/screen4/back.svg) no-repeat center;
+    background: url(../img/screen4/back.svg) no-repeat top;
     background-size: contain;
     width: 100vw;
     height: 100vh;
@@ -373,6 +377,10 @@ body {
 
   #screen5{
     height: 89vh;
+
+    background: url("../img/screen5/back.svg") no-repeat;
+    background-position: top;
+    background-size: cover;
   }
 
   #screen5_back {
