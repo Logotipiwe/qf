@@ -1,36 +1,36 @@
 @font-face {
   font-family: 'TT Norms';
-  src: url("fonts/TTNorms-Thin.woff");
+  src: url("../fonts/TTNorms-Thin.woff");
   font-weight: 100;
   font-style: normal; }
 
 @font-face {
   font-family: 'TT Norms';
-  src: url("fonts/TTNorms-ExtraLight.woff");
+  src: url("../fonts/TTNorms-ExtraLight.woff");
   font-weight: 200;
   font-style: normal; }
 
 @font-face {
   font-family: 'TT Norms';
-  src: url("fonts/TTNorms-Light.woff");
+  src: url("../fonts/TTNorms-Light.woff");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: 'TT Norms';
-  src: url("fonts/TTNorms-Regular.woff");
+  src: url("../fonts/TTNorms-Regular.woff");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: 'TT Norms';
-  src: url("fonts/TTNorms-Medium.woff");
+  src: url("../fonts/TTNorms-Medium.woff");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: 'TT Norms';
-  src: url("fonts/TTNorms-Bold.woff");
+  src: url("../fonts/TTNorms-Bold.woff");
   font-weight: 600;
   font-style: normal; }
 
@@ -62,6 +62,7 @@ body {
   body div.dash {
     width: 50px;
     height: 5px;
+    border-radius: 2.5px;
     background-color: #0269D6; }
   body a {
     color: #0765DD;
@@ -75,7 +76,7 @@ body {
     height: 100vh;
     position: absolute;
     width: 100vw;
-    background: url("img/screen1/back.svg") no-repeat right;
+    background: url("../img/screen1/back.svg") no-repeat right;
     background-size: contain; }
   body #header {
     z-index: 10;
@@ -102,6 +103,7 @@ body {
       font-weight: bold; }
       body #header #header_right > nav {
         display: flex;
+        font-weight: 200;
         box-sizing: border-box;
         font-size: 13px;
         margin-left: 52px;
@@ -119,7 +121,7 @@ body {
         margin-left: 67px;
         padding: 0 16px;
         background-color: #2A356B;
-        border-radius: 11px;
+        border-radius: 19px;
         justify-content: space-between; }
         body #header #header_right #db_link #db_logo_outer {
           background-color: rgba(255, 255, 255, 0.1);
@@ -128,7 +130,13 @@ body {
           body #header #header_right #db_link #db_logo_outer img {
             height: 12px; }
         body #header #header_right #db_link span {
+          color: white;
           font-size: 14px; }
+    body #header #header_burger {
+      display: none; }
+  body #screen1 {
+    flex-direction: column;
+    height: 100vh; }
   body #screen1_content {
     z-index: 10;
     margin-top: 19.3vh;
@@ -156,7 +164,7 @@ body {
       margin: 0; }
     body #screen1_content .info_button {
       background-color: #0269D6;
-      border-radius: 12px;
+      border-radius: 20px;
       color: white;
       margin-top: 39px;
       width: 161px;
@@ -166,19 +174,13 @@ body {
       justify-content: space-between;
       box-shadow: 0 12px 21px -9px rgba(7, 101, 221, 0.64);
       margin-bottom: 20px; }
-      body #screen1_content .info_button .user_outer {
-        background-color: rgba(255, 255, 255, 0.1);
-        border-radius: 4px;
-        height: 30px;
-        width: 30px; }
-        body #screen1_content .info_button .user_outer img {
-          margin-top: 6px;
-          margin-left: 3px; }
       body #screen1_content .info_button span {
         font-size: 13px;
-        font-weight: 600; }
+        font-weight: 400; }
+  body #screen2 {
+    height: 49vh; }
   body #screen2_left {
-    background: url("img/screen2/back.svg") left no-repeat;
+    background: url("../img/screen2/back.svg") left no-repeat;
     background-size: contain;
     position: absolute;
     margin-top: -347px;
@@ -199,29 +201,22 @@ body {
     body #screen2_content p.text {
       width: 392px;
       margin: 2px 0 6px 80px; }
+  body #screen3 {
+    height: 84vh; }
   body #screen3_right {
+    background: url(../img/screen3/back.svg) no-repeat right;
+    background-size: contain;
     position: absolute;
-    right: 0; }
-    body #screen3_right #vector12 {
-      position: absolute;
-      height: 730px;
-      right: 0;
-      margin-top: -31px; }
-    body #screen3_right #screen3_vector11 {
-      position: absolute;
-      right: 0;
-      height: 665px;
-      margin-top: -111px; }
-    body #screen3_right #group17 {
-      position: absolute;
-      right: 10vh;
-      height: 379px;
-      margin-top: 63px; }
+    height: 109vh;
+    width: 100vw;
+    margin-top: -17vh; }
   body #screen3_content {
     justify-self: flex-start;
     width: 500px;
     margin: 111px 0 0 140px;
     flex-direction: column; }
+    body #screen3_content #screen3_title {
+      margin-top: 37px; }
     body #screen3_content span.number {
       height: max-content; }
     body #screen3_content span.title {
@@ -232,6 +227,9 @@ body {
       width: 450px; }
     body #screen3_content a {
       margin-top: 30px; }
+  body #screen4 {
+    height: 81vh;
+    flex-direction: column; }
   body #screen4_device {
     position: absolute;
     left: 0; }
@@ -241,49 +239,41 @@ body {
       width: 36vw;
       margin-top: -34px;
       z-index: 9; }
-  body #screen4_back_img {
-    background: url("img/screen4/back.svg") no-repeat center;
-    background-size: cover;
-    width: 100vw;
-    height: 100vh; }
   body #screen4_back {
-    position: absolute;
-    left: 0; }
-    body #screen4_back #device_svg {
-      position: absolute;
-      left: 11.7vw;
-      width: 24.3vw;
-      margin-top: -3vw; }
-    body #screen4_back #device_circle {
-      background-color: #0269D6;
-      border-radius: 50%;
-      height: 30.7vw;
-      width: 30.7vw;
-      position: absolute;
-      left: 8.8vw;
-      margin-top: 76px; }
+    position: absolute; }
+  body #screen4_back_img {
+    background: url(../img/screen4/back.svg) no-repeat center;
+    background-size: contain;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 125px; }
   body #screen4_content {
     width: 500px;
     align-self: flex-end;
     margin-right: 144px;
     margin-top: 78px;
     flex-direction: column; }
+    body #screen4_content #screen4_title {
+      margin-top: 30px;
+      align-items: center; }
     body #screen4_content span.title {
       margin-left: 19px; }
     body #screen4_content p.text {
       margin-top: 27px; }
     body #screen4_content a {
       margin-top: 33px; }
+  body #screen5 {
+    height: 89vh; }
   body #screen5_back {
-    background: url("img/screen5/back.svg") no-repeat center;
-    background-size: cover;
+    background: url("../img/screen5/back.svg") no-repeat center;
+    background-size: contain;
     position: absolute;
     width: 100vw;
     height: 100vh; }
   body #screen5_content {
     z-index: 10;
     margin: 6vw auto;
-    width: 440px;
+    width: 450px;
     flex-direction: column;
     align-items: center; }
     body #screen5_content span.number {
@@ -293,11 +283,15 @@ body {
       color: white; }
     body #screen5_content p.text {
       color: white; }
-  body #screen6_back {
-    background: url("img/screen6/back.svg") no-repeat center;
-    background-size: cover;
+  body #screen6 {
+    height: 110vh; }
+  body #screen6_back_left {
     height: 100vh;
-    width: 100vw;
+    margin-top: 10vh;
+    position: absolute; }
+  body #screen6_back_right {
+    height: 100vh;
+    right: -100vw;
     position: absolute; }
   body #screen6_content {
     margin: 10.8vw auto;
@@ -376,70 +370,3 @@ body {
   100% {
     opacity: 1;
     bottom: 0; } }
-
-@media (min-width: 1601px) {
-  body span.title {
-    font-size: 48px; }
-  body p.text {
-    font-size: 20px;
-    line-height: 42px; }
-  body span.number {
-    font-size: 36px; }
-  body #header {
-    height: 116px; }
-    body #header #logo img {
-      height: 70px; }
-    body #header #logo span {
-      font-size: 26.2px;
-      margin-left: 43px; }
-    body #header #header_right #db_link {
-      width: 244px;
-      height: 73px;
-      padding: 0 22px;
-      margin-left: 95px; }
-      body #header #header_right #db_link #db_logo_outer {
-        padding: 11px; }
-        body #header #header_right #db_link #db_logo_outer img {
-          height: 17px; }
-      body #header #header_right #db_link span {
-        font-size: 19px;
-        margin-right: 8px; }
-    body #header #header_right > nav {
-      font-size: 20px;
-      margin-left: 72px; }
-    body #header #header_right > nav.selected {
-      font-size: 20px; }
-  body #screen1_content {
-    width: 460px; }
-    body #screen1_content p:first-of-type {
-      font-size: 17.4px; }
-    body #screen1_content h1 {
-      font-size: 52px;
-      margin-top: 33px;
-      line-height: 56px; }
-      body #screen1_content h1 span {
-        height: 11px;
-        width: 11px;
-        margin: 0 31px 13px 0; }
-    body #screen1_content p.desc {
-      font-size: 20px;
-      line-height: 41px;
-      font-weight: 500; }
-    body #screen1_content .info_button {
-      margin-top: 52px;
-      width: 227px;
-      height: 74px;
-      padding: 0 33px 0 25px; }
-      body #screen1_content .info_button span {
-        font-size: 19px; }
-  body #screen2_left {
-    margin-top: -480px;
-    width: 950px;
-    height: 950px; }
-  body #screen2_content {
-    padding-bottom: 118px; }
-    body #screen2_content p.text {
-      width: 564px;
-      margin: 2px 41px 8px 113px; }
-    body #screen2_content span.title {
-      margin-left: 53px; } }

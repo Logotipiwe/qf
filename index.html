@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Hi</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/media1600.css">
+    <link rel="stylesheet" href="styles/media1950.css">
+    <link rel="stylesheet" href="styles/media1000.css">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <script src="index.js"></script>
 </head>
 <body>
-<div class="screen" style="flex-direction: column; height: 100vh">
-    <div class="to_anim anim_left">
+<div class="screen" id="screen1">
+    <div class="to_anim anim_left" id="screen1_back_anim">
         <div id="screen1_back"></div>
     </div>
     <div id="header">
         <div id="logo">
-                <img src="img/screen1/logo_header.svg" alt="">
+            <img src="img/screen1/logo_header.svg" alt="">
             <span>Quantum Flips</span>
         </div>
         <div id="header_right">
@@ -25,8 +28,13 @@
                 <div id="db_logo_outer">
                     <img src="img/screen1/pages_24px.svg" alt="">
                 </div>
-                <span>DASHBOARD</span>
+                <span>Dashboard</span>
             </nav>
+        </div>
+        <div id="header_burger">
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
     </div>
     <div class="to_anim anim_right">
@@ -37,30 +45,31 @@
                 updates</p>
             <div class="info_button">
                 <img src="img/screen1/user.svg" alt="">
-                <span>SOLD OUT</span>
+                <span>Sold Out</span>
             </div>
         </div>
     </div>
 </div>
-<div class="screen" style="height: 49vh">
+<div class="screen" id="screen2">
     <div id="screen2_left" class="to_anim anim_right"></div>
     <div id="screen2_content" class="to_anim anim_top">
-        <span class="number">01</span>
-        <span class="title">Quick Flips</span>
+        <div id="screen2_title">
+            <span class="number">01</span>
+            <span class="title">Quick Flips</span>
+        </div>
         <p class="text">Thanks to our fast custom monitors, we track over 100 sites from the EU, USA and Asia, such as:
             Solebox, Off-White, Slamjam, Mesh, Bstn, 43Einhalb, Twitter, Footlocker.</p>
     </div>
 </div>
-<div class="screen" style="height: 84vh;">
-    <div id="screen3_right" class="to_anim anim_left">
-        <img src="img/screen3/Vector12.svg" id="vector12" alt="">
-        <img src="img/screen3/Vector11.svg" id="screen3_vector11" alt="">
-        <img src="img/screen3/Group17.svg" id="group17" alt="">
+<div class="screen" id="screen3">
+    <div class="to_anim anim_left">
+        <div id="screen3_right">
+        </div>
     </div>
     <div class="to_anim anim_right">
         <div id="screen3_content">
             <div class="dash"></div>
-            <div style="margin-top: 34px">
+            <div id="screen3_title">
                 <span class="number">02</span>
                 <span class="title">Monitors</span>
             </div>
@@ -72,8 +81,8 @@
         </div>
     </div>
 </div>
-<div class="screen" style="height: 81vh;flex-direction: column">
-    <div style="position: absolute;">
+<div class="screen" id="screen4">
+    <div id="screen4_back">
         <div class="to_anim anim_top">
             <div id="screen4_back_img"></div>
         </div>
@@ -83,7 +92,7 @@
     </div>
     <div id="screen4_content" class="to_anim anim_left">
         <div class="dash"></div>
-        <div style="margin-top: 30px;align-items: center;">
+        <div id="screen4_title">
             <span class="number">03</span>
             <span class="title">Guides</span>
         </div>
@@ -93,7 +102,7 @@
         <a href="...">See more information <img src="img/link_arrow.svg" class="link_arrow" alt=""></a>
     </div>
 </div>
-<div class="screen" style="height: 89vh">
+<div class="screen" id="screen5">
     <div class="to_anim anim_top">
         <div id="screen5_back"></div>
     </div>
@@ -105,10 +114,10 @@
             week</p>
     </div>
 </div>
-<div class="screen" style="height: 110vh">
+<div class="screen" id="screen6">
     <div class="to_anim anim_top">
-        <div id="screen6_back">
-        </div>
+        <img id="screen6_back_left" src="img/screen6/left_back.svg">
+        <img id="screen6_back_right" src="img/screen6/right_back.svg">
     </div>
     <div id="screen6_content" class="to_anim anim_top">
         <div class="row">

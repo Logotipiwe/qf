@@ -1,0 +1,207 @@
+@media (min-width: 1601px) {
+  body {
+    div.dash{
+      width: 70px;
+      height: 7px;
+      border-radius: 3.5px;
+    }
+    span.title{
+      font-size: 48px;
+    }
+    p.text{
+      font-size: 20px;
+      line-height: 42px;
+    }
+    span.number{
+      font-size: 40px;
+    }
+    a{
+      font-size: 22px;
+    }
+    .link_arrow{
+      margin-left: 15px;
+      width: 23px;
+      margin-bottom: 3px;
+    }
+    #header {
+      height: 116px;
+
+      #logo {
+        img {
+          height: 70px;
+        }
+        span{
+          font-size: 26.2px;
+          margin-left: 43px;
+        }
+      }
+
+      #header_right{
+        #db_link{
+          width: 232px;
+          height: 73px;
+          padding: 0 24px;
+          margin-left: 95px;
+
+          #db_logo_outer{
+            padding: 11px;
+
+            img{
+              height: 17px;
+            }
+          }
+
+          span{
+            font-size: 21px;
+            margin-right: 8px;
+          }
+        }
+
+        >nav{
+          font-size: 19px;
+          margin-left: 72px;
+        }
+
+        >nav.selected{
+          font-size: 20px;
+        }
+      }
+    }
+
+    #screen1_content{
+      width: 460px;
+
+      p:first-of-type{
+        font-size: 17.4px;
+      }
+
+      h1{
+        font-size: 52px;
+        margin-top: 33px;
+        line-height: 56px;
+
+        span{
+          height: 11px;
+          width: 11px;
+          margin: 0 31px 13px 0;
+        }
+      }
+
+      p.desc{
+        font-size: 20px;
+        line-height: 41px;
+        font-weight: 500;
+      }
+
+      .info_button{
+        margin-top: 52px;
+        width: 213px;
+        height: 74px;
+        padding: 0 33px 0 20px;
+        span{
+          font-size: 22px;
+          margin-bottom: 6px;
+        }
+      }
+    }
+
+    #screen2_left{
+      margin-top: -496px;
+      width: 1000px;
+      height: 1110px;
+    }
+
+    #screen2_content{
+      padding-bottom: 118px;
+
+      p.text{
+        width: 564px;
+        margin: 2px 41px 8px 113px;
+      }
+      span.title{
+        margin-left: 53px;
+      }
+    }
+
+    #screen3_content{
+      width: 630px;
+      margin: 158px 0 0 200px;
+
+      #screen3_title{
+        margin-top: 45px;
+      }
+
+      span.title{
+        margin-left: 27px;
+      }
+      p.text{
+        margin-top: 44px;
+        width: 640px;
+      }
+      a{
+        margin-top: 42px;
+      }
+    }
+
+    #screen4_content{
+      width: 635px;
+      margin-right: 250px;
+      margin-top: 122px;
+
+      #screen4_title{
+        margin-top: 41px;
+      }
+
+      p.text{
+        margin-top: 39px;
+      }
+
+      a{
+        margin-top: 48px;
+      }
+    }
+
+    #screen5_content{
+      width: 640px;
+
+      span.number{
+        margin-bottom: 32px;
+      }
+    }
+
+    #screen6_content{
+      .row{
+        >div{
+          height: 266px;
+          padding: 73px 20px 0 60px;
+
+          h2{
+            font-size: 31px;
+          }
+
+          p{
+            font-size: 21px;
+            line-height: 41px;
+          }
+        }
+      }
+      .row:nth-child(2){
+        margin-top: 20px;
+      }
+
+      .center{
+        margin: 176px auto 0;
+
+        img{
+          height: 67px;
+        }
+
+        span{
+          font-size: 30px;
+          margin-left: 52px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
