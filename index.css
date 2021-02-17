@@ -1,9 +1,45 @@
+@font-face {
+  font-family: 'TT Norms';
+  src: url("fonts/TTNorms-Thin.woff");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("fonts/TTNorms-ExtraLight.woff");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("fonts/TTNorms-Light.woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("fonts/TTNorms-Regular.woff");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("fonts/TTNorms-Medium.woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("fonts/TTNorms-Bold.woff");
+  font-weight: 600;
+  font-style: normal; }
+
 div {
   display: flex;
   box-sizing: border-box; }
 
 body {
-  font-family: "TT Norms Medium", sans-serif;
+  font-family: "TT Norms", sans-serif;
   margin: 0;
   flex-direction: column;
   overflow-x: hidden;
@@ -11,19 +47,19 @@ body {
   body .screen {
     overflow: hidden; }
   body span.number {
-    font-family: "TT Norms Light", sans-serif;
     color: rgba(42, 53, 107, 0.24);
     font-size: 30px;
-    font-weight: 100; }
+    font-weight: 400; }
   body span.title {
     color: #2A356B;
     font-weight: 700;
     font-size: 33px; }
   body p.text {
-    font-size: 13px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 31px;
-    color: #9EAFC5; }
+    font-size: 14.2px;
+    color: #9EAFC5;
+    width: 450px; }
   body div.dash {
     width: 50px;
     height: 5px;
@@ -31,7 +67,17 @@ body {
   body a {
     color: #0765DD;
     text-decoration: none;
-    font-weight: bold; }
+    font-weight: 500; }
+  body .link_arrow {
+    margin-left: 11px;
+    width: 18px;
+    margin-bottom: 1px; }
+  body #screen1_back {
+    height: 100vh;
+    position: absolute;
+    width: 100vw;
+    background: url("img/screen1/back.svg") no-repeat right;
+    background-size: contain; }
   body #screen1_right {
     position: absolute;
     display: flex;
@@ -61,7 +107,7 @@ body {
     height: 78px;
     align-items: flex-end;
     justify-content: space-between;
-    padding: 0 126px 0 139px; }
+    padding: 0 110px 0 139px; }
     body #header #logo {
       align-items: center; }
       body #header #logo #logo_outer {
@@ -76,10 +122,10 @@ body {
           margin-top: 6px;
           margin-left: 2px; }
       body #header #logo span {
-        font-weight: 700;
-        font-size: 19px;
+        font-weight: 600;
+        font-size: 18.2px;
         margin-left: 28px;
-        margin-bottom: 3px;
+        margin-bottom: 7px;
         color: #2A356B; }
     body #header #header_right {
       height: 100%;
@@ -88,10 +134,18 @@ body {
       color: white;
       font-family: "TT Norms Medium", sans-serif;
       font-weight: bold; }
-      body #header #header_right > span {
-        font-size: 15px;
-        margin-left: 46px; }
+      body #header #header_right > nav {
+        display: flex;
+        box-sizing: border-box;
+        font-size: 13px;
+        margin-left: 52px;
+        color: rgba(255, 255, 255, 0.5); }
+      body #header #header_right > nav:first-child {
+        font-size: 14px;
+        color: white; }
       body #header #header_right #db_link {
+        display: flex;
+        box-sizing: border-box;
         width: 172px;
         height: 52px;
         margin-top: 6px;
@@ -116,15 +170,14 @@ body {
     width: 345px;
     flex-direction: column; }
     body #screen1_content p {
-      font-family: "TT Norms Medium", sans-serif;
-      color: #0765DD;
-      font-size: 13px;
-      font-weight: 600;
+      font-size: 12.3px;
+      font-weight: 700;
       margin: -1px 0 0 1px; }
     body #screen1_content h1 {
       font-size: 37px;
       margin-top: 17px;
-      line-height: 47px; }
+      line-height: 47px;
+      color: #2A356A; }
       body #screen1_content h1 span {
         height: 8px;
         width: 8px;
@@ -133,7 +186,7 @@ body {
         display: inline-block;
         margin: 10px 25px 10px 0; }
     body #screen1_content p.desc {
-      font-size: 13.3px;
+      font-size: 13.8px;
       line-height: 26px;
       color: #9EAFC5; }
     body #screen1_content .info_button {
@@ -160,31 +213,27 @@ body {
         font-size: 13px;
         font-weight: 600; }
   body #screen2_left {
-    height: 100%; }
-    body #screen2_left img {
-      height: 800px;
-      z-index: 8;
-      margin-top: -360px; }
-    body #screen2_left span {
-      z-index: 9;
-      height: max-content;
-      font-weight: 700;
-      color: #2A356B;
-      font-size: 103px;
-      position: absolute;
-      white-space: nowrap;
-      margin: 76px 0 0 -265px; }
+    background: url("img/screen2/back.svg") left no-repeat;
+    background-size: contain;
+    position: absolute;
+    margin-top: -347px;
+    width: 680px;
+    height: 680px;
+    margin-left: 0; }
   body #screen2_content {
     align-items: center;
     justify-self: flex-end;
     padding-bottom: 86px;
-    width: 61vw;
-    padding-left: 7px; }
+    width: 100vw;
+    padding-left: 7px;
+    justify-content: flex-end;
+    margin-right: 104px;
+    margin-bottom: 6px; }
     body #screen2_content span.title {
       margin-left: 35px; }
     body #screen2_content p.text {
-      width: 399px;
-      margin: 0 0 6px 81px; }
+      width: 392px;
+      margin: 2px 0 6px 80px; }
   body #screen3_right {
     position: absolute;
     right: 0; }
@@ -206,29 +255,35 @@ body {
   body #screen3_content {
     justify-self: flex-start;
     width: 500px;
-    margin: 105px 0 0 140px;
+    margin: 111px 0 0 140px;
     flex-direction: column; }
     body #screen3_content span.number {
       height: max-content; }
     body #screen3_content span.title {
-      margin-left: 23px; }
+      margin-left: 18px;
+      margin-top: -4px; }
     body #screen3_content p.text {
       margin-top: 30px;
-      width: 474px; }
+      width: 450px; }
     body #screen3_content a {
       margin-top: 30px; }
+  body #screen4_device {
+    position: absolute;
+    left: 0; }
+    body #screen4_device img {
+      position: absolute;
+      left: 6vw;
+      width: 36vw;
+      margin-top: -34px;
+      z-index: 9; }
+  body #screen4_back_img {
+    background: url("img/screen4/back.svg") no-repeat center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh; }
   body #screen4_back {
     position: absolute;
     left: 0; }
-    body #screen4_back #vector14 {
-      position: absolute;
-      left: 0;
-      margin-top: 99px;
-      width: 100vw; }
-    body #screen4_back #vector15 {
-      position: absolute;
-      width: 100vw;
-      margin-top: 220px; }
     body #screen4_back #device_svg {
       position: absolute;
       left: 11.7vw;
@@ -251,33 +306,15 @@ body {
     body #screen4_content span.title {
       margin-left: 19px; }
     body #screen4_content p.text {
-      margin-top: 27px;
-      width: 442px; }
+      margin-top: 27px; }
     body #screen4_content a {
       margin-top: 33px; }
   body #screen5_back {
-    width: 0; }
-    body #screen5_back #logo4 {
-      position: absolute;
-      right: -100vw;
-      height: 29.7vw;
-      z-index: 8;
-      margin-top: 7vw;
-      opacity: 0.3; }
-    body #screen5_back #rect46 {
-      position: absolute;
-      width: 100vw;
-      z-index: 7; }
-    body #screen5_back #screen5_vector12 {
-      height: 64vw;
-      position: absolute;
-      margin-top: 2.2vw;
-      z-index: 8; }
-    body #screen5_back #screen5_boots {
-      position: absolute;
-      margin: 13.8vw 0 0 20.4vw;
-      z-index: 9;
-      width: 56.4vw; }
+    background: url("img/screen5/back.svg") no-repeat center;
+    background-size: cover;
+    position: absolute;
+    width: 100vw;
+    height: 100vh; }
   body #screen5_content {
     z-index: 10;
     margin: 6vw auto;
@@ -292,16 +329,11 @@ body {
     body #screen5_content p.text {
       color: white; }
   body #screen6_back {
-    width: 0; }
-    body #screen6_back #screen6_vector14 {
-      left: 0;
-      margin-top: -2vw;
-      height: 55vw; }
-    body #screen6_back #screen6_vector13 {
-      right: -2vw;
-      position: absolute;
-      height: 43vw;
-      margin-top: 0; }
+    background: url("img/screen6/back.svg") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    position: absolute; }
   body #screen6_content {
     margin: 10.8vw auto;
     flex-direction: column;
@@ -379,21 +411,3 @@ body {
   100% {
     opacity: 1;
     bottom: 0; } }
-
-@font-face {
-  font-family: 'TT Norms Light';
-  src: url("TTNorms-Light.eot");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'TT Norms Medium';
-  src: url("TTNorms-Medium.eot");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'TT Norms';
-  src: url("TTNorms-Regular.eot");
-  font-weight: normal;
-  font-style: normal; }

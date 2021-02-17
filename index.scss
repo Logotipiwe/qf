@@ -1,10 +1,47 @@
+@font-face {
+  font-family: 'TT Norms';
+  src: url('fonts/TTNorms-Thin.woff');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TT Norms';
+  src: url('fonts/TTNorms-ExtraLight.woff');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TT Norms';
+  src: url('fonts/TTNorms-Light.woff');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TT Norms';
+  src: url('fonts/TTNorms-Regular.woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TT Norms';
+  src: url('fonts/TTNorms-Medium.woff');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TT Norms';
+  src: url('fonts/TTNorms-Bold.woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
 div {
   display: flex;
   box-sizing: border-box;
 }
 
 body {
-  font-family: "TT Norms Medium", sans-serif;
+  font-family: "TT Norms", sans-serif;
   margin: 0;
   flex-direction: column;
   overflow-x: hidden;
@@ -15,10 +52,9 @@ body {
   }
 
   span.number {
-    font-family: "TT Norms Light", sans-serif;
     color: rgba(42, 53, 107, .24);
     font-size: 30px;
-    font-weight: 100;
+    font-weight: 400;
   }
 
   span.title {
@@ -28,10 +64,11 @@ body {
   }
 
   p.text {
-    font-size: 13px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 31px;
+    font-size: 14.2px;
     color: #9EAFC5;
+    width: 450px;
   }
 
   div.dash {
@@ -43,7 +80,21 @@ body {
   a {
     color: #0765DD;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
+  }
+
+  .link_arrow{
+      margin-left: 11px;
+      width: 18px;
+      margin-bottom: 1px;
+  }
+
+  #screen1_back{
+    height: 100vh;
+    position: absolute;
+    width: 100vw;
+    background: url("img/screen1/back.svg") no-repeat right;
+    background-size: contain;
   }
 
   #screen1_right {
@@ -83,7 +134,7 @@ body {
     height: 78px;
     align-items: flex-end;
     justify-content: space-between;
-    padding: 0 126px 0 139px;
+    padding: 0 110px 0 139px;
 
     #logo {
       align-items: center;
@@ -105,10 +156,10 @@ body {
       }
 
       span {
-        font-weight: 700;
-        font-size: 19px;
+        font-weight: 600;
+        font-size: 18.2px;
         margin-left: 28px;
-        margin-bottom: 3px;
+        margin-bottom: 7px;
         color: #2A356B;
       }
     }
@@ -121,12 +172,21 @@ body {
       font-family: "TT Norms Medium", sans-serif;
       font-weight: bold;
 
-      > span {
-        font-size: 15px;
-        margin-left: 46px;
+      > nav {
+        display: flex;
+        box-sizing: border-box;
+        font-size: 13px;
+        margin-left: 52px;
+        color: rgba(255,255,255,0.5);
+      }
+      >nav:first-child{
+        font-size: 14px;
+        color: white;
       }
 
       #db_link {
+        display: flex;
+        box-sizing: border-box;
         width: 172px;
         height: 52px;
         margin-top: 6px;
@@ -162,10 +222,8 @@ body {
     flex-direction: column;
 
     p {
-      font-family: "TT Norms Medium", sans-serif;
-      color: #0765DD;
-      font-size: 13px;
-      font-weight: 600;
+      font-size: 12.3px;
+      font-weight: 700;
       margin: -1px 0 0 1px;
     }
 
@@ -173,6 +231,7 @@ body {
       font-size: 37px;
       margin-top: 17px;
       line-height: 47px;
+      color: #2A356A;
 
       span {
         height: 8px;
@@ -185,7 +244,7 @@ body {
     }
 
     p.desc {
-      font-size: 13.3px;
+      font-size: 13.8px;
       line-height: 26px;
       color: #9EAFC5;
     }
@@ -224,40 +283,49 @@ body {
   }
 
   #screen2_left {
-    height: 100%;
+    background: url('img/screen2/back.svg') left no-repeat;
+    background-size: contain;
+    position: absolute;
+    margin-top: -347px;
+    width: 680px;
+    height: 680px;
+    margin-left: 0;
 
-    img {
-      height: 800px;
-      z-index: 8;
-      margin-top: -360px;
-    }
-
-    span {
-      z-index: 9;
-      height: max-content;
-      font-weight: 700;
-      color: #2A356B;
-      font-size: 103px;
-      position: absolute;
-      white-space: nowrap;
-      margin: 76px 0 0 -265px;
-    }
+    //img {
+    //  height: 800px;
+    //  z-index: 8;
+    //  margin-top: -360px;
+    //}
+    //
+    //span {
+    //  z-index: 9;
+    //  height: max-content;
+    //  font-weight: 700;
+    //  color: #2A356B;
+    //  font-size: 103px;
+    //  position: absolute;
+    //  white-space: nowrap;
+    //  margin: 76px 0 0 -265px;
+    //}
   }
 
   #screen2_content {
     align-items: center;
     justify-self: flex-end;
     padding-bottom: 86px;
-    width: 61vw;
+    width: 100vw;
     padding-left: 7px;
+    justify-content: flex-end;
+    margin-right: 104px;
+    margin-bottom: 6px;
 
     span.title {
       margin-left: 35px;
     }
 
     p.text {
-      width: 399px;
-      margin: 0 0 6px 81px;
+      width: 392px;
+      margin: 2px 0 6px 80px;
     }
   }
 
@@ -290,7 +358,7 @@ body {
   #screen3_content {
     justify-self: flex-start;
     width: 500px;
-    margin: 105px 0 0 140px;
+    margin: 111px 0 0 140px;
     flex-direction: column;
 
     span.number {
@@ -298,12 +366,13 @@ body {
     }
 
     span.title {
-      margin-left: 23px;
+      margin-left: 18px;
+      margin-top: -4px;
     }
 
     p.text {
       margin-top: 30px;
-      width: 474px;
+      width: 450px;
     }
 
     a {
@@ -311,22 +380,29 @@ body {
     }
   }
 
-  #screen4_back {
+  #screen4_device{
     position: absolute;
     left: 0;
 
-    #vector14 {
+    img{
       position: absolute;
-      left: 0;
-      margin-top: 99px;
-      width: 100vw;
+      left: 6vw;
+      width: 36vw;
+      margin-top: -34px;
+      z-index: 9;
     }
+  }
 
-    #vector15 {
-      position: absolute;
-      width: 100vw;
-      margin-top: 220px;
-    }
+  #screen4_back_img{
+    background: url("img/screen4/back.svg") no-repeat center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  #screen4_back {
+    position: absolute;
+    left: 0;
 
     #device_svg {
       position: absolute;
@@ -359,7 +435,6 @@ body {
 
     p.text {
       margin-top: 27px;
-      width: 442px;
     }
 
     a {
@@ -368,36 +443,11 @@ body {
   }
 
   #screen5_back {
-    width: 0;
-
-    #logo4 {
-      position: absolute;
-      right: -100vw;
-      height: 29.7vw;
-      z-index: 8;
-      margin-top: 7vw;
-      opacity: 0.3;
-    }
-
-    #rect46 {
-      position: absolute;
-      width: 100vw;
-      z-index: 7;
-    }
-
-    #screen5_vector12 {
-      height: 64vw;
-      position: absolute;
-      margin-top: 2.2vw;
-      z-index: 8;
-    }
-
-    #screen5_boots {
-      position: absolute;
-      margin: 13.8vw 0 0 20.4vw;
-      z-index: 9;
-      width: 56.4vw;
-    }
+    background: url("img/screen5/back.svg") no-repeat center;
+    background-size: cover;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
   }
 
   #screen5_content {
@@ -422,20 +472,11 @@ body {
   }
 
   #screen6_back {
-    width: 0;
-
-    #screen6_vector14 {
-      left: 0;
-      margin-top: -2vw;
-      height: 55vw;
-    }
-
-    #screen6_vector13 {
-      right: -2vw;
-      position: absolute;
-      height: 43vw;
-      margin-top: 0;
-    }
+    background: url("img/screen6/back.svg") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
   }
 
   #screen6_content {
@@ -560,25 +601,4 @@ $anim_length: 200px;
 
 @media (min-width: 1600px) {
 
-}
-
-@font-face {
-  font-family: 'TT Norms Light';
-  src: url('TTNorms-Light.eot');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'TT Norms Medium';
-  src: url('TTNorms-Medium.eot');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'TT Norms';
-  src: url('TTNorms-Regular.eot');
-  font-weight: normal;
-  font-style: normal;
 }

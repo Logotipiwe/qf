@@ -9,13 +9,9 @@
 </head>
 <body>
 <div class="screen" style="flex-direction: column; height: 100vh">
-    <div id="screen1_right" class="to_anim anim_left">
-        <img src="img/screen1/Rectangle37.svg" alt="">
-        <img src="img/screen1/logo2.png" alt="" id="logo2">
-        <img src="img/screen1/Vector10.svg" alt="" id="vector10">
-        <img src="img/screen1/Vector11.svg" alt="" id="vector11">
+    <div class="to_anim anim_left">
+        <div id="screen1_back"></div>
     </div>
-
     <div id="header">
         <div id="logo">
             <div id="logo_outer">
@@ -24,15 +20,15 @@
             <span>Quantum Flips</span>
         </div>
         <div id="header_right">
-            <span>Home</span>
-            <span>Features</span>
-            <span>FAQ</span>
-            <div id="db_link">
+            <nav>Home</nav>
+            <nav>Features</nav>
+            <nav>FAQ</nav>
+            <nav id="db_link">
                 <div id="db_logo_outer">
                     <img src="img/screen1/pages_24px.svg" alt="">
                 </div>
                 <span>DASHBOARD</span>
-            </div>
+            </nav>
         </div>
     </div>
     <div class="to_anim anim_right">
@@ -50,11 +46,8 @@
         </div>
     </div>
 </div>
-<div class="screen" style="height: 49vh; justify-content: space-between">
-    <div id="screen2_left" class="to_anim anim_right">
-        <img src="img/screen2/Vector13.svg" alt="">
-        <span>quantum Flips</span>
-    </div>
+<div class="screen" style="height: 49vh">
+    <div id="screen2_left" class="to_anim anim_right"></div>
     <div id="screen2_content" class="to_anim anim_top">
         <span class="number">01</span>
         <span class="title">Quick Flips</span>
@@ -71,7 +64,7 @@
     <div class="to_anim anim_right">
         <div id="screen3_content">
             <div class="dash"></div>
-            <div style="margin-top: 45px">
+            <div style="margin-top: 34px">
                 <span class="number">02</span>
                 <span class="title">Monitors</span>
             </div>
@@ -79,39 +72,34 @@
                 general requests to setting up bots, we are always ready to help our members to buy several products
                 every
                 week</p>
-            <a href="...">See more information --></a>
+            <a href="...">See more information <img src="img/link_arrow.svg" class="link_arrow" alt=""></a>
         </div>
     </div>
 </div>
 <div class="screen" style="height: 81vh;flex-direction: column">
-    <div id="screen4_back">
+    <div style="position: absolute;">
         <div class="to_anim anim_top">
-            <img src="img/screen4/Vector14.svg" id="vector14" alt="">
-            <img src="img/screen4/Vector15.svg" id="vector15" alt="">
+            <div id="screen4_back_img"></div>
         </div>
-        <div class="to_anim anim_right">
-            <div id="device_circle"></div>
-            <img src="img/screen4/Device.svg" id="device_svg" alt="">
-        </div>
+    </div>
+    <div id="screen4_device" class="to_anim anim_right">
+        <img src="img/screen4/Device.svg" alt="">
     </div>
     <div id="screen4_content" class="to_anim anim_left">
         <div class="dash"></div>
-        <div style="margin-top: 35px">
+        <div style="margin-top: 30px;align-items: center;">
             <span class="number">03</span>
             <span class="title">Guides</span>
         </div>
         <p class="text">With many years of experience, we provide the best service and support for any need: from
             general requests to setting up bots, we are always ready to help our members to buy several products every
             week</p>
-        <a href="...">See more information --></a>
+        <a href="...">See more information <img src="img/link_arrow.svg" class="link_arrow" alt=""></a>
     </div>
 </div>
 <div class="screen" style="height: 89vh">
-    <div id="screen5_back" class="to_anim anim_top">
-        <img src="img/screen5/logo4.svg" alt="" id="logo4">
-        <img src="img/screen5/Rectangle46.svg" alt="" id="rect46">
-        <img src="img/screen5/Vector12.svg" alt="" id="screen5_vector12">
-        <img src="img/screen5/boots.png" alt="" id="screen5_boots">
+    <div class="to_anim anim_top">
+        <div id="screen5_back"></div>
     </div>
     <div id="screen5_content" class="to_anim anim_top">
         <span class="number">04</span>
@@ -123,12 +111,10 @@
 </div>
 <div class="screen" style="height: 110vh">
     <div class="to_anim anim_top">
-        <div id="screen6_back" style="width: 100vw; position: absolute">
-            <img src="img/screen6/Vector14.svg" alt="" id="screen6_vector14">
-            <img src="img/screen6/Vector13.svg" alt="" id="screen6_vector13">
+        <div id="screen6_back">
         </div>
     </div>
-    <div id="screen6_content">
+    <div id="screen6_content" class="to_anim anim_top">
         <div class="row">
             <div style="flex-basis: 36%">
                 <h2>Сколько стоит подписка?</h2>
