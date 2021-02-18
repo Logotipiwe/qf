@@ -13,6 +13,10 @@
       font-size: 19px;
     }
 
+    .screen{
+      padding: 0;
+    }
+
     #screen1_back_anim {
       display: none;
     }
@@ -215,6 +219,7 @@
       //background-position-y: -130px;
       //background-position-x: -83px;
       width: 100vw;
+      height: 119vh;
     }
 
     #screen5_back {

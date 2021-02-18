@@ -6,6 +6,8 @@
     line-height: 35px; }
   body a {
     font-size: 19px; }
+  body .screen {
+    padding: 0; }
   body #screen1_back_anim {
     display: none; }
   body #screen1 {
@@ -134,7 +136,8 @@
   body #screen5 {
     background: url(../img/screen5/back_mob.svg) no-repeat center;
     background-size: cover;
-    width: 100vw; }
+    width: 100vw;
+    height: 119vh; }
   body #screen5_back {
     background: url(../img/screen5/back_mob.svg) no-repeat 80px;
     background-size: cover;
