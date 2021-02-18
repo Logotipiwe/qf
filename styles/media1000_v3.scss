@@ -58,6 +58,8 @@
     }
 
     #screen1_content {
+      margin: 19.3vh auto;
+      width: 77vw;
       .info_button {
         border-radius: 13px;
         color: white;
@@ -104,12 +106,14 @@
 
     #screen2_left {
       background: url(../img/screen2/back_mob.svg) left no-repeat;
-      width: 100%;
+      width: 75%;
+      max-width: 340px;
       margin: 40px 0 0 0;
+      background-size: contain;
     }
 
     #screen3 {
-      height: 980px;
+      height: auto;
       flex-direction: column;
     }
 
@@ -147,10 +151,15 @@
     }
 
     #screen3_back_mob {
+      //размеры svg width="380" height="438" viewBox="170 50 140 508"
       background: url(../img/screen3/back_mob.svg) no-repeat right;
       display: flex;
       width: 100%;
-      height: 535px;
+      height: 511px;
+      flex-shrink: 0;
+      background-size: contain;
+      align-self: flex-end;
+      max-width: 680px;
     }
 
     #screen4 {
@@ -191,7 +200,7 @@
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
-      margin: 0 auto;
+      margin: 40px auto 0;
       padding: 0;
       width: 77vw;
 

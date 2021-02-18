@@ -32,14 +32,17 @@
       body #header #header_burger > div {
         height: 4px;
         background-color: #2A356B; }
-  body #screen1_content .info_button {
-    border-radius: 13px;
-    color: white;
-    margin-top: 25px;
-    width: 177px;
-    height: 63px; }
-    body #screen1_content .info_button span {
-      font-size: 18px; }
+  body #screen1_content {
+    margin: 19.3vh auto;
+    width: 77vw; }
+    body #screen1_content .info_button {
+      border-radius: 13px;
+      color: white;
+      margin-top: 25px;
+      width: 177px;
+      height: 63px; }
+      body #screen1_content .info_button span {
+        font-size: 18px; }
   body #screen2 {
     height: 600px; }
   body #screen2_content {
@@ -61,10 +64,12 @@
       width: auto; }
   body #screen2_left {
     background: url(../img/screen2/back_mob.svg) left no-repeat;
-    width: 100%;
-    margin: 40px 0 0 0; }
+    width: 75%;
+    max-width: 340px;
+    margin: 40px 0 0 0;
+    background-size: contain; }
   body #screen3 {
-    height: 980px;
+    height: auto;
     flex-direction: column; }
   body #screen3_content_anim {
     margin: 65px auto 0; }
@@ -91,7 +96,11 @@
     background: url(../img/screen3/back_mob.svg) no-repeat right;
     display: flex;
     width: 100%;
-    height: 535px; }
+    height: 511px;
+    flex-shrink: 0;
+    background-size: contain;
+    align-self: flex-end;
+    max-width: 680px; }
   body #screen4 {
     height: auto;
     background: url(../img/screen4/back_mob.svg) no-repeat bottom;
@@ -117,7 +126,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin: 0 auto;
+    margin: 40px auto 0;
     padding: 0;
     width: 77vw; }
     body #screen4_content #screen4_title {
