@@ -15,7 +15,7 @@ body {
   background-color: #F3F5F9;
   flex-direction: column; }
   body #logo {
-    margin-top: 105px;
+    margin: auto;
     align-items: center;
     justify-content: space-between; }
     body #logo span {
@@ -24,7 +24,8 @@ body {
       color: #2A356B;
       font-weight: bolder; }
   body main {
-    width: 938px;
+    width: 70vw;
+    max-width: 938px;
     flex-direction: column;
     margin: auto; }
     body main .panel {
@@ -48,9 +49,9 @@ body {
       flex-direction: column;
       justify-content: space-between; }
     body main #first_row .panel:first-child {
-      width: 400px;
       flex-grow: 0;
-      margin-right: 20px; }
+      margin-right: 20px;
+      flex-basis: 42%; }
   body #account .info {
     width: 100%; }
     body #account .info img {
@@ -80,6 +81,7 @@ body {
     body #key_panel #key_field input {
       flex-grow: 1;
       border: none;
+      outline: none;
       background-color: inherit;
       align-items: center;
       font-size: 16.5px;
@@ -97,15 +99,53 @@ body {
       top: 601px;
       background-color: white;
       border-radius: 7px;
-      padding: 19px 0 22px 22px;
+      padding: 19px 0 29px 22px;
       flex-direction: column;
-      flex-grow: 1; }
+      flex-grow: 1;
+      justify-content: space-between;
+      border-bottom: 4px solid; }
       body #info_panel > div h2 {
         margin: 0;
         font-size: 18px;
         color: #2A356B; }
+      body #info_panel > div span {
+        font-weight: 500;
+        font-size: 16px;
+        color: rgba(42, 53, 107, 0.29); }
+    body #info_panel > div:first-child {
+      border-color: #0E77E6; }
+    body #info_panel > div:nth-child(2) {
+      border-color: #2A356B; }
+    body #info_panel > div:nth-child(3) {
+      border-color: #FF5C5C; }
     body #info_panel > div:not(:last-child) {
       margin-right: 31px; }
+  body .button {
+    width: 100%;
+    height: 74px;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #006EEF;
+    box-shadow: 0 14px 26px -12px rgba(7, 101, 221, 0.34);
+    border-radius: 11px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500; }
+    body .button span {
+      font-family: "TT Norms", sans-serif;
+      align-self: center;
+      font-size: 18px;
+      font-weight: 500;
+      margin-left: 20px; }
+  body #buttons_row .button:not(:last-child) {
+    margin-right: 26px; }
+  body #buttons_row .button:nth-child(2) {
+    background-color: #2A356B; }
+  body #buttons_row .button:nth-child(3) {
+    background-color: #FF5C5C; }
   body #agree {
     margin-bottom: 57px;
     font-size: 16px; }
