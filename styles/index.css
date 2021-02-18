@@ -183,7 +183,7 @@ body {
     background: url("../img/screen2/back.svg") left no-repeat;
     background-size: contain;
     position: absolute;
-    margin-top: -347px;
+    margin-top: -280px;
     width: 680px;
     height: 680px;
     margin-left: 0; }
@@ -228,19 +228,19 @@ body {
     body #screen3_content a {
       margin-top: 30px; }
   body #screen4 {
-    height: 82vh;
+    height: 85vh;
     flex-direction: column;
     background: url(../img/screen4/back.svg) no-repeat center;
     background-size: cover;
-    background-position: top; }
+    background-position-y: 160px; }
   body #screen4_device {
     position: absolute;
     left: 0; }
     body #screen4_device img {
       position: absolute;
-      left: 6vw;
+      left: 7vw;
       width: 36vw;
-      margin-top: -34px;
+      margin-top: -23px;
       z-index: 9; }
   body #screen4_back {
     position: absolute; }
@@ -266,7 +266,7 @@ body {
     body #screen4_content a {
       margin-top: 33px; }
   body #screen5 {
-    height: 89vh;
+    height: 100vh;
     background: url("../img/screen5/back.svg") no-repeat;
     background-position: top;
     background-size: cover; }
