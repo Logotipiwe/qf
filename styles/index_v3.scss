@@ -1,45 +1,3 @@
-@font-face {
-  font-family: 'TT Norms';
-  src: url('../fonts/TTNorms-Thin.woff');
-  font-weight: 100;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'TT Norms';
-  src: url('../fonts/TTNorms-ExtraLight.woff');
-  font-weight: 200;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'TT Norms';
-  src: url('../fonts/TTNorms-Light.woff');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'TT Norms';
-  src: url('../fonts/TTNorms-Regular.woff');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'TT Norms';
-  src: url('../fonts/TTNorms-Medium.woff');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'TT Norms';
-  src: url('../fonts/TTNorms-Bold.woff');
-  font-weight: 600;
-  font-style: normal;
-}
-
 div {
   display: flex;
   box-sizing: border-box;
@@ -153,12 +111,17 @@ body {
         width: 172px;
         height: 52px;
         margin-top: 6px;
-        align-items: center;
         margin-left: 67px;
         padding: 0 16px;
         background-color: #2A356B;
         border-radius: 19px;
-        justify-content: space-between;
+
+        a{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+        }
 
         #db_logo_outer {
           background-color: rgba(255, 255, 255, 0.1);
