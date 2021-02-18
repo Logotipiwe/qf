@@ -9,7 +9,6 @@ body {
   overflow-x: hidden;
   background-color: #F3F5F9; }
   body .screen {
-    padding: 0 4vw;
     overflow: hidden; }
   body span.number {
     color: rgba(42, 53, 107, 0.24);
