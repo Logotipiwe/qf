@@ -1,0 +1,111 @@
+@media (max-width: 1200px) {
+  body{
+    margin: 0;
+    overflow-y: auto;
+    height: auto;
+    
+    #logo{
+      margin: 30px auto;
+    }
+    main{
+      width: 90vw;
+      margin: 30px 0;
+      #first_row{
+        flex-direction: column;
+
+        .panel{
+          height: auto;
+        }
+      }
+      .panel{
+        height: auto;
+        width: 100%;
+      }
+    }
+
+    #info_panel{
+      flex-direction: column;
+
+      >div:not(:last-child){
+        margin-right: 0;
+        margin-bottom: 31px;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  body{
+    height: auto;
+
+    #key_panel{
+      #key_field{
+        input{
+          width: 80%;
+        }
+      }
+    }
+
+    main{
+      #buttons_row{
+        flex-direction: column;
+
+        .button{
+          width: 80%;
+          align-self: center;
+        }
+        .button:not(:last-child){
+          margin-right: 0;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  #agree{
+    margin: 20px 0;
+  }
+}
+@media (max-width: 424px) {
+  body{
+    #account{
+      .info{
+        justify-content: space-between;
+        img{
+          height: 60px;
+          width: 60px;
+          margin: 0;
+        }
+        >div{
+          #login{
+            font-size: 16px;
+          }
+          #email{
+            font-size: 13px;
+          }
+        }
+      }
+    }
+    #key_panel{
+      #key_field{
+        padding: 9px 5px 9px 0;
+        height: 49px;
+
+        input{
+          font-size: 12px;
+        }
+      }
+    }
+    #info_panel{
+      padding: 15px;
+    }
+    main{
+      .panel{
+        padding: 0 17px 17px;
+
+        .title{
+          margin: 14px 0;
+        }
+      }
+    }
+  }
+}

@@ -33,6 +33,7 @@ body{
   }
 
   main{
+    display: flex;
     width: 70vw;
     max-width: 938px;
     flex-direction: column;
@@ -89,7 +90,7 @@ body{
         padding: 10px 0;
         justify-content: space-between;
 
-        #logo{
+        #login{
           color: #2A356A;
           font-size: 20px;
           font-weight: bold;

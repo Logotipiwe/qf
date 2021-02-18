@@ -24,6 +24,7 @@ body {
       color: #2A356B;
       font-weight: bolder; }
   body main {
+    display: flex;
     width: 70vw;
     max-width: 938px;
     flex-direction: column;
@@ -63,7 +64,7 @@ body {
       flex-direction: column;
       padding: 10px 0;
       justify-content: space-between; }
-      body #account .info > div #logo {
+      body #account .info > div #login {
         color: #2A356A;
         font-size: 20px;
         font-weight: bold; }

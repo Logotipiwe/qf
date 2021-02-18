@@ -11,6 +11,7 @@ body {
   background-color: #F3F5F9;
 
   .screen {
+    padding: 0 4vw;
     overflow: hidden;
   }
 
@@ -65,7 +66,7 @@ body {
     height: 78px;
     align-items: flex-end;
     justify-content: space-between;
-    padding: 0 8.1vw 0 10.2vw;
+    padding: 0 12vw 0 12vw;
 
     #logo {
       align-items: center;
@@ -116,7 +117,7 @@ body {
         background-color: #2A356B;
         border-radius: 19px;
 
-        a{
+        a {
           display: flex;
           align-items: center;
           justify-content: space-between;
@@ -139,12 +140,13 @@ body {
         }
       }
     }
-    #header_burger{
+
+    #header_burger {
       display: none;
     }
   }
 
-  #screen1{
+  #screen1 {
     flex-direction: column;
     height: 100vh
   }
@@ -152,7 +154,7 @@ body {
   #screen1_content {
     z-index: 10;
     margin-top: 19.3vh;
-    margin-left: 10.3vw;
+    margin-left: 13.3vw;
     width: 350px;
     flex-direction: column;
 
@@ -203,7 +205,7 @@ body {
     }
   }
 
-  #screen2{
+  #screen2 {
     height: 49vh;
   }
 
@@ -214,7 +216,7 @@ body {
     margin-top: -280px;
     width: 680px;
     height: 680px;
-    margin-left: 0;
+    margin-left: -66px;
   }
 
   #screen2_content {
@@ -224,10 +226,10 @@ body {
     width: 100vw;
     padding-left: 7px;
     justify-content: flex-end;
-    margin-right: 104px;
+    margin-right: 10vw;
     margin-bottom: 6px;
 
-    .dash{
+    .dash {
       display: none;
     }
 
@@ -241,7 +243,7 @@ body {
     }
   }
 
-  #screen3{
+  #screen3 {
     height: 84vh;
   }
 
@@ -260,7 +262,7 @@ body {
     margin: 111px 0 0 140px;
     flex-direction: column;
 
-    #screen3_title{
+    #screen3_title {
       margin-top: 37px;
     }
 
@@ -283,11 +285,11 @@ body {
     }
   }
 
-  #screen3_back_mob{
+  #screen3_back_mob {
     display: none;
   }
 
-  #screen4{
+  #screen4 {
     height: 85vh;
     flex-direction: column;
 
@@ -326,7 +328,7 @@ body {
     margin-top: 78px;
     flex-direction: column;
 
-    #screen4_title{
+    #screen4_title {
       margin-top: 30px;
       align-items: center;
     }
@@ -344,7 +346,7 @@ body {
     }
   }
 
-  #screen5{
+  #screen5 {
     height: 100vh;
 
     background: url("../img/screen5/back.svg") no-repeat;
@@ -381,7 +383,7 @@ body {
     }
   }
 
-  #screen6{
+  #screen6 {
     height: 110vh;
   }
 
@@ -391,7 +393,9 @@ body {
     height: 53vw;
     width: 34vw;
     background-size: contain;
+    left: 0;
   }
+
   #screen6_back_right {
     background: url(../img/screen6/right_back.svg) no-repeat;
     height: 60vw;
@@ -402,20 +406,20 @@ body {
     background-size: contain;
     background-position-y: top;
   }
-  #screen6_back_right_mob{
+
+  #screen6_back_right_mob {
     display: none;
   }
 
   #screen6_content {
-    margin: 50px auto;
+    margin: 50px 13vw;
     flex-direction: column;
     width: 81vw;
-    margin-left: 10.3vw;
 
     .row {
       > div {
         padding: 46px 30px 0 46px;
-        background-color: rgba(255, 255, 255, 0.33);
+        background-color: rgb(255, 255, 255);
         flex-direction: column;
         height: 189px;
         margin: 19px 0 19px 0;
@@ -437,13 +441,11 @@ body {
     }
 
     .row:first-child {
-      > div {
-        background-color: white;
-      }
-      >div:first-child{
+      > div:first-child {
         flex-basis: 36%;
       }
-      >div:nth-child(2){
+
+      > div:nth-child(2) {
         flex-basis: 67%;
       }
     }
@@ -492,13 +494,16 @@ body {
       animation-name: slide_top;
     }
   }
+
   .screen.to_anim {
     position: relative;
     opacity: 0;
   }
-  .screen.anim{
+
+  .screen.anim {
     animation: 1s ease-in-out forwards;
   }
+
   .screen.anim.anim_right {
     animation-name: slide_right;
   }

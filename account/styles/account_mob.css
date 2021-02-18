@@ -1,0 +1,61 @@
+@media (max-width: 1200px) {
+  body {
+    margin: 0;
+    overflow-y: auto;
+    height: auto; }
+    body #logo {
+      margin: 30px auto; }
+    body main {
+      width: 90vw;
+      margin: 30px 0; }
+      body main #first_row {
+        flex-direction: column; }
+        body main #first_row .panel {
+          height: auto; }
+      body main .panel {
+        height: auto;
+        width: 100%; }
+    body #info_panel {
+      flex-direction: column; }
+      body #info_panel > div:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 31px; } }
+
+@media (max-width: 600px) {
+  body {
+    height: auto; }
+    body #key_panel #key_field input {
+      width: 80%; }
+    body main #buttons_row {
+      flex-direction: column; }
+      body main #buttons_row .button {
+        width: 80%;
+        align-self: center; }
+      body main #buttons_row .button:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 20px; }
+  #agree {
+    margin: 20px 0; } }
+
+@media (max-width: 424px) {
+  body #account .info {
+    justify-content: space-between; }
+    body #account .info img {
+      height: 60px;
+      width: 60px;
+      margin: 0; }
+    body #account .info > div #login {
+      font-size: 16px; }
+    body #account .info > div #email {
+      font-size: 13px; }
+  body #key_panel #key_field {
+    padding: 9px 5px 9px 0;
+    height: 49px; }
+    body #key_panel #key_field input {
+      font-size: 12px; }
+  body #info_panel {
+    padding: 15px; }
+  body main .panel {
+    padding: 0 17px 17px; }
+    body main .panel .title {
+      margin: 14px 0; } }
