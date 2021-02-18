@@ -196,6 +196,8 @@ body {
     justify-content: flex-end;
     margin-right: 104px;
     margin-bottom: 6px; }
+    body #screen2_content .dash {
+      display: none; }
     body #screen2_content span.title {
       margin-left: 35px; }
     body #screen2_content p.text {
@@ -227,6 +229,8 @@ body {
       width: 450px; }
     body #screen3_content a {
       margin-top: 30px; }
+  body #screen3_back_mob {
+    display: none; }
   body #screen4 {
     height: 85vh;
     flex-direction: column;
@@ -239,9 +243,7 @@ body {
     body #screen4_device img {
       position: absolute;
       left: 7vw;
-      width: 36vw;
-      margin-top: -23px;
-      z-index: 9; }
+      width: 36vw; }
   body #screen4_back {
     position: absolute; }
   body #screen4_back_img {
@@ -345,6 +347,17 @@ body {
   body .screen.anim .anim_left {
     animation-name: slide_left; }
   body .screen.anim .anim_top {
+    animation-name: slide_top; }
+  body .screen.to_anim {
+    position: relative;
+    opacity: 0; }
+  body .screen.anim {
+    animation: 1s ease-in-out forwards; }
+  body .screen.anim.anim_right {
+    animation-name: slide_right; }
+  body .screen.anim.anim_left {
+    animation-name: slide_left; }
+  body .screen.anim.anim_top {
     animation-name: slide_top; }
 
 @keyframes slide_right {

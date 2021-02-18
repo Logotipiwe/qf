@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/media1600.css">
     <link rel="stylesheet" href="styles/media1950.css">
     <link rel="stylesheet" href="styles/media1000.css">
+    <link rel="stylesheet" href="styles/media600.css">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <script src="index.js"></script>
 </head>
@@ -52,7 +53,8 @@
 </div>
 <div class="screen" id="screen2">
     <div id="screen2_left" class="to_anim anim_right"></div>
-    <div id="screen2_content" class="to_anim anim_top">
+    <div id="screen2_content" class="content to_anim anim_top">
+        <div class="dash"></div>
         <div id="screen2_title">
             <span class="number">01</span>
             <span class="title">Quick Flips</span>
@@ -66,7 +68,7 @@
         <div id="screen3_right">
         </div>
     </div>
-    <div class="to_anim anim_right">
+    <div class="to_anim anim_right" id="screen3_content_anim">
         <div id="screen3_content">
             <div class="dash"></div>
             <div id="screen3_title">
@@ -80,13 +82,9 @@
             <a href="...">See more information <img src="img/link_arrow.svg" class="link_arrow" alt=""></a>
         </div>
     </div>
+    <div id="screen3_back_mob"></div>
 </div>
 <div class="screen" id="screen4">
-<!--    <div id="screen4_back">-->
-<!--        <div class="to_anim anim_top">-->
-<!--            <div id="screen4_back_img"></div>-->
-<!--        </div>-->
-<!--    </div>-->
     <div id="screen4_device" class="to_anim anim_right">
         <img src="img/screen4/Device.svg" alt="">
     </div>
@@ -102,15 +100,13 @@
         <a href="...">See more information <img src="img/link_arrow.svg" class="link_arrow" alt=""></a>
     </div>
 </div>
-<div class="screen" id="screen5">
-<!--    <div class="to_anim anim_top">-->
-<!--        <div id="screen5_back"></div>-->
-<!--    </div>-->
-    <div id="screen5_content" class="to_anim anim_top">
+<div class="screen to_anim anim_top" id="screen5">
+    <div id="screen5_content">
         <span class="number">04</span>
         <span class="title">Drop-Recaps</span>
         <p class="text">With many years of experience, we provide the best service and support for any need: from
-            general requests to setting up bots, we are always ready to help our members to buy several products every
+            general requests to setting up bots, we are always ready to help our members to buy several products
+            every
             week</p>
     </div>
 </div>

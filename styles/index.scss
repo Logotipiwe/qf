@@ -264,6 +264,10 @@ body {
     margin-right: 104px;
     margin-bottom: 6px;
 
+    .dash{
+      display: none;
+    }
+
     span.title {
       margin-left: 35px;
     }
@@ -316,6 +320,10 @@ body {
     }
   }
 
+  #screen3_back_mob{
+    display: none;
+  }
+
   #screen4{
     height: 85vh;
     flex-direction: column;
@@ -333,8 +341,6 @@ body {
       position: absolute;
       left: 7vw;
       width: 36vw;
-      margin-top: -23px;
-      z-index: 9;
     }
   }
 
@@ -504,6 +510,24 @@ body {
     .anim_top {
       animation-name: slide_top;
     }
+  }
+  .screen.to_anim {
+    position: relative;
+    opacity: 0;
+  }
+  .screen.anim{
+    animation: 1s ease-in-out forwards;
+  }
+  .screen.anim.anim_right {
+    animation-name: slide_right;
+  }
+
+  .screen.anim.anim_left {
+    animation-name: slide_left;
+  }
+
+  .screen.anim.anim_top {
+    animation-name: slide_top;
   }
 }
 
