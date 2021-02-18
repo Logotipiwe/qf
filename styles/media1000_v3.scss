@@ -22,10 +22,12 @@
     }
 
     #screen1 {
-      height: 890px;
+      height: 100vh;
+      background: linear-gradient(0deg, rgba(42, 53, 107, 0.03) -2.08%, rgba(255, 255, 255, 0) 74.11%);
     }
 
     #header {
+      flex-shrink: 0;
       height: 122px;
       padding: 0 53px;
 
@@ -219,31 +221,24 @@
       //background-position-y: -130px;
       //background-position-x: -83px;
       width: 100vw;
-      height: 119vh;
-    }
-
-    #screen5_back {
-      background: url(../img/screen5/back_mob.svg) no-repeat 80px;
-      background-size: cover;
-      position: absolute;
-      width: 100vw;
-      height: 700px;
+      height: 106vh;
+      background-position-y: 81px;
     }
 
     #screen5_content {
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
-      margin: 170px auto 0;
+      margin: auto;
       padding: 0;
-      width: 77vw;
+      width: 85vw;
 
       span.number {
-        margin-bottom: 26px;
+        margin-bottom: 13px;
       }
 
       p.text {
-        margin: 40px 0 0 0;
+        margin: 20px 0 0 0;
         text-align: center;
       }
     }

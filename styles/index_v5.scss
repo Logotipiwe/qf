@@ -55,7 +55,7 @@ body {
   }
 
   #screen1_back {
-    height: 100vh;
+    height: 108vh;
     position: absolute;
     width: 100vw;
     background: url("../img/screen1/back.svg") no-repeat right;
@@ -67,7 +67,7 @@ body {
     height: 78px;
     align-items: flex-end;
     justify-content: space-between;
-    padding: 0 12vw 0 12vw;
+    padding: 0 6vw;
 
     #logo {
       align-items: center;
@@ -110,13 +110,13 @@ body {
       #db_link {
         display: flex;
         box-sizing: border-box;
-        width: 172px;
+        width: 166px;
         height: 52px;
         margin-top: 6px;
         margin-left: 67px;
-        padding: 0 16px;
+        padding: 0 28px 0 16px;
         background-color: #2A356B;
-        border-radius: 19px;
+        border-radius: 12px;
 
         a {
           display: flex;
@@ -137,7 +137,7 @@ body {
 
         span {
           color: white;
-          font-size: 14px;
+          font-size: 15px;
         }
       }
     }
@@ -155,7 +155,7 @@ body {
   #screen1_content {
     z-index: 10;
     margin-top: 19.3vh;
-    margin-left: 13.3vw;
+    margin-left: 4.3vw;
     width: 350px;
     flex-direction: column;
 
@@ -188,7 +188,7 @@ body {
 
     .info_button {
       background-color: #0269D6;
-      border-radius: 20px;
+      border-radius: 13px;
       color: white;
       margin-top: 39px;
       width: 161px;
@@ -207,16 +207,16 @@ body {
   }
 
   #screen2 {
-    height: 49vh;
+    height: 43vh;
   }
 
   #screen2_left {
-    background: url('../img/screen2/back.svg') left no-repeat;
+    background: url(../img/screen2/back.svg) left no-repeat;
     background-size: contain;
     position: absolute;
-    margin-top: -280px;
+    margin-top: -382px;
     width: 680px;
-    height: 680px;
+    height: 840px;
     margin-left: -66px;
   }
 
@@ -227,11 +227,20 @@ body {
     width: 100vw;
     padding-left: 7px;
     justify-content: flex-end;
-    margin-right: 10vw;
+    margin-right: 6vw;
     margin-bottom: 6px;
 
     .dash {
-      display: none;
+      //display: none;
+    }
+
+    #screen2_title{
+      flex-direction: column;
+      height: 92px;
+
+      >div:nth-child(2){
+        margin-top: 22px;
+      }
     }
 
     span.title {
@@ -240,12 +249,12 @@ body {
 
     p.text {
       width: 392px;
-      margin: 2px 0 6px 80px;
+      margin: 2px 0 6px 70px;
     }
   }
 
   #screen3 {
-    height: 84vh;
+    height: 108vh;
   }
 
   #screen3_right {
@@ -254,13 +263,13 @@ body {
     position: absolute;
     height: 109vh;
     width: 100vw;
-    margin-top: -114px;
+    margin-top: -33px;
   }
 
   #screen3_content {
     justify-self: flex-start;
     width: 500px;
-    margin: 111px 0 0 140px;
+    margin: 150px 0 0 90px;
     flex-direction: column;
 
     #screen3_title {
@@ -323,9 +332,9 @@ body {
   }
 
   #screen4_content {
-    width: 500px;
+    width: 456px;
     align-self: flex-end;
-    margin-right: 144px;
+    margin-right: 130px;
     margin-top: 78px;
     flex-direction: column;
 
@@ -413,7 +422,7 @@ body {
   }
 
   #screen6_content {
-    margin: 50px 13vw;
+    margin: 50px 8vw;
     flex-direction: column;
     width: 81vw;
 
@@ -460,14 +469,14 @@ body {
       align-items: center;
 
       img {
-        height: 60px;
+        height: 50px;
       }
 
       span {
         color: #2A356A;
         font-size: 21px;
         font-weight: 600;
-        margin-left: 16px;
+        margin-left: 37px;
         margin-bottom: 10px;
       }
     }
