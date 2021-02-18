@@ -124,6 +124,7 @@
       margin-top: 45px; }
   body #screen5 {
     background: url(../img/screen5/back_mob.svg) no-repeat center;
+    background-size: cover;
     width: 100vw; }
   body #screen5_back {
     background: url(../img/screen5/back_mob.svg) no-repeat 80px;
@@ -145,6 +146,25 @@
       text-align: center; }
   body #screen6 {
     height: auto; }
+  body #screen6_back_right {
+    width: 600px;
+    height: 800px;
+    margin-top: 0; }
+  body #screen6_back_left {
+    height: 510px;
+    width: 100%;
+    max-width: 450px;
+    margin-top: 330px;
+    background-size: cover; }
+  body #screen6_back_right_mob {
+    background: url(../img/screen6/right_back.svg) no-repeat right;
+    display: flex;
+    position: absolute;
+    right: 0;
+    width: 600px;
+    height: 600px;
+    margin-top: 1100px;
+    background-size: contain; }
   body #screen6_content {
     flex-direction: column;
     justify-content: flex-start;

@@ -423,14 +423,24 @@ body {
   }
 
   #screen6_back_left {
-    height: 100vh;
-    margin-top: 10vh;
+    background: url(../img/screen6/left_back.svg) no-repeat left;
     position: absolute;
+    height: 53vw;
+    width: 34vw;
+    background-size: contain;
   }
   #screen6_back_right {
-    height: 100vh;
-    right: -100vw;
+    background: url(../img/screen6/right_back.svg) no-repeat;
+    height: 60vw;
+    width: 50vw;
+    background-position-x: right;
     position: absolute;
+    right: 0;
+    background-size: contain;
+    background-position-y: top;
+  }
+  #screen6_back_right_mob{
+    display: none;
   }
 
   #screen6_content {

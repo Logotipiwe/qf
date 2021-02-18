@@ -202,6 +202,7 @@
 
     #screen5 {
       background: url(../img/screen5/back_mob.svg) no-repeat center;
+      background-size: cover;
       //background-position-y: -130px;
       //background-position-x: -83px;
       width: 100vw;
@@ -235,6 +236,31 @@
 
     #screen6 {
       height: auto;
+    }
+
+    #screen6_back_right{
+      width: 600px;
+      height: 800px;
+      margin-top: 0;
+    }
+
+    #screen6_back_left{
+      height: 510px;
+      width: 100%;
+      max-width: 450px;
+      margin-top: 330px;
+      background-size: cover;
+    }
+
+    #screen6_back_right_mob{
+      background: url(../img/screen6/right_back.svg) no-repeat right;
+      display: flex;
+      position: absolute;
+      right: 0;
+      width: 600px;
+      height: 600px;
+      margin-top: 1100px;
+      background-size: contain;
     }
 
     #screen6_content{
