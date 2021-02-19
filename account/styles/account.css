@@ -186,4 +186,5 @@ body {
     color: #FF404D; }
   body #agree {
     margin-bottom: 57px;
+    cursor: pointer;
     font-size: 16px; }

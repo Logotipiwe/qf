@@ -145,14 +145,16 @@
     body #screen5_content span.number {
       margin-bottom: 20px; }
   body #screen6 {
-    height: 85vh; }
+    height: auto; }
   body #screen6_back_left {
     height: 34vw; }
   body #screen6_back_right {
-    height: 50vw; }
+    height: 35vw;
+    background-size: cover;
+    width: 40vw; }
   body #screen6_content {
     margin: 50px 13.5vw;
-    height: 78vh; }
+    height: auto; }
     body #screen6_content .row > div {
       height: 215px;
       padding: 40px 20px 0 41px; }

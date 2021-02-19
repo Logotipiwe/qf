@@ -261,8 +261,6 @@ body {
       color: white; }
     body #screen5_content p.text {
       color: white; }
-  body #screen6 {
-    height: 110vh; }
   body #screen6_back_left {
     background: url(../img/screen6/left_back.svg) no-repeat left;
     position: absolute;
@@ -272,12 +270,12 @@ body {
     left: 0; }
   body #screen6_back_right {
     background: url(../img/screen6/right_back.svg) no-repeat;
-    height: 60vw;
+    height: 45vw;
     width: 50vw;
     background-position-x: right;
     position: absolute;
     right: 0;
-    background-size: contain;
+    background-size: cover;
     background-position-y: top; }
   body #screen6_back_right_mob {
     display: none; }
@@ -317,7 +315,7 @@ body {
     body #screen6_content .row > div:nth-child(2) {
       margin-left: 2.4vw; }
     body #screen6_content .center {
-      margin: 110px auto;
+      margin: 60px auto;
       align-items: center; }
       body #screen6_content .center img {
         height: 50px; }

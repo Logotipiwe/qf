@@ -256,19 +256,21 @@
     }
 
     #screen6{
-      height: 85vh;
+      height: auto;
     }
 
     #screen6_back_left{
       height: 34vw;
     }
     #screen6_back_right{
-      height: 50vw;
+      height: 35vw;
+      background-size: cover;
+      width: 40vw;
     }
 
     #screen6_content {
       margin: 50px 13.5vw;
-      height: 78vh;
+      height: auto;
       .row {
         > div {
           height: 215px;
