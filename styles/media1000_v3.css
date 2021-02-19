@@ -36,6 +36,9 @@
       body #header #header_burger > div {
         height: 4px;
         background-color: #2A356B; }
+  body #screen1_content_anim {
+    height: auto;
+    width: auto; }
   body #screen1_content {
     margin: 19.3vh auto;
     width: 77vw; }
@@ -136,16 +139,16 @@
     body #screen4_content #screen4_title {
       margin-top: 45px; }
   body #screen5 {
-    background: url(../img/screen5/back_mob.svg) no-repeat center;
+    background: url(../img/screen5/back_mob2.svg) no-repeat center;
     background-size: cover;
     width: 100vw;
-    height: 106vh;
+    height: auto;
     background-position-y: 81px; }
   body #screen5_content {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin: auto;
+    margin: 16vh auto 10vh;
     padding: 0;
     width: 85vw; }
     body #screen5_content span.number {
@@ -153,6 +156,8 @@
     body #screen5_content p.text {
       margin: 20px 0 0 0;
       text-align: center; }
+    body #screen5_content #boots {
+      width: 100vw; }
   body #screen6 {
     height: auto; }
   body #screen6_back_right {

@@ -178,7 +178,7 @@
     }
 
     #screen3_right{
-      height: 118vh;
+      height: 114vh;
       margin-top: -137px; //-17vh
     }
 
@@ -215,7 +215,6 @@
       img{
         left: 15vw;
         width: 29vw;
-        top: -14vh;
       }
     }
 
@@ -243,7 +242,7 @@
 
     #screen5{
       height: 97vh;
-      background-image: url("../img/screen5/back_wide.svg");
+      background-image: url("../img/screen5/back_wide_2.svg");
     }
 
     #screen5_content {
@@ -274,7 +273,6 @@
         > div {
           height: 215px;
           padding: 40px 20px 0 41px;
-          transition: 1s;
 
           h2 {
             font-size: 25px;
@@ -285,15 +283,6 @@
             line-height: 33px;
           }
         }
-        >div:hover{
-          background-color: #0E77E6;
-          h2{
-            color: white;
-          }
-          p{
-            color: white;
-          }
-        }
       }
 
       .row:nth-child(2) {
@@ -301,7 +290,7 @@
       }
 
       .center {
-        margin: 116px auto 0;
+        margin: 70px auto 0;
 
         img {
           height: 50px;

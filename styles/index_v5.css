@@ -246,15 +246,11 @@ body {
     background: url("../img/screen5/back.svg") no-repeat;
     background-position: top;
     background-size: cover; }
-  body #screen5_back {
-    background: url("../img/screen5/back.svg") no-repeat center;
-    background-size: contain;
-    position: absolute;
-    width: 100vw;
-    height: 100vh; }
+    body #screen5 #boots {
+      width: 54vw; }
   body #screen5_content {
     z-index: 10;
-    margin: 6vw auto;
+    margin: auto;
     width: 450px;
     flex-direction: column;
     align-items: center; }
@@ -295,16 +291,25 @@ body {
       flex-direction: column;
       height: 189px;
       margin: 19px 0 19px 0;
-      border-radius: 14px; }
+      border-radius: 14px;
+      transition: .6s background-color; }
       body #screen6_content .row > div h2 {
         margin: 0 0 20px 0;
         color: #2A356B;
-        font-size: 21px; }
+        font-size: 21px;
+        transition: .3s color; }
       body #screen6_content .row > div p {
         color: rgba(42, 53, 107, 0.29);
         margin: 0;
         font-size: 15px;
-        line-height: 29px; }
+        line-height: 29px;
+        transition: .3s color; }
+    body #screen6_content .row > div:hover {
+      background-color: #0E77E6; }
+      body #screen6_content .row > div:hover h2 {
+        color: white; }
+      body #screen6_content .row > div:hover p {
+        color: white; }
     body #screen6_content .row:first-child > div:first-child {
       flex-basis: 36%; }
     body #screen6_content .row:first-child > div:nth-child(2) {
@@ -333,6 +338,10 @@ body {
     animation-name: slide_left; }
   body .screen.anim .anim_top {
     animation-name: slide_top; }
+  body .screen.anim .anim_bottom_right {
+    animation-name: slide_bottom_right; }
+  body .screen.anim .anim_bottom_left {
+    animation-name: slide_bottom_right; }
   body .screen.to_anim {
     position: relative;
     opacity: 0; }
@@ -344,6 +353,8 @@ body {
     animation-name: slide_left; }
   body .screen.anim.anim_top {
     animation-name: slide_top; }
+  body .screen.anim.anim_bottom_left {
+    animation-name: slide_bottom_right; }
 
 @keyframes slide_right {
   0% {
@@ -374,3 +385,15 @@ body {
   100% {
     opacity: 1;
     bottom: 0; } }
+
+@keyframes slide_bottom_right {
+  0% {
+    opacity: 0;
+    right: -200px;
+    top: -200px; }
+  30% {
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    right: 0;
+    top: 0; } }

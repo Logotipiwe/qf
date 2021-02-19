@@ -63,9 +63,15 @@
       }
     }
 
+    #screen1_content_anim{
+      height: auto;
+      width: auto;
+    }
+
     #screen1_content {
       margin: 19.3vh auto;
       width: 77vw;
+
       .info_button {
         border-radius: 13px;
         color: white;
@@ -216,20 +222,19 @@
     }
 
     #screen5 {
-      background: url(../img/screen5/back_mob.svg) no-repeat center;
+      background: url(../img/screen5/back_mob2.svg) no-repeat center;
       background-size: cover;
-      //background-position-y: -130px;
-      //background-position-x: -83px;
       width: 100vw;
-      height: 106vh;
+      height: auto;
       background-position-y: 81px;
     }
 
     #screen5_content {
       flex-direction: column;
       justify-content: flex-start;
+      //position: relative;
       align-items: center;
-      margin: auto;
+      margin: 16vh auto 10vh;
       padding: 0;
       width: 85vw;
 
@@ -240,6 +245,10 @@
       p.text {
         margin: 20px 0 0 0;
         text-align: center;
+      }
+
+      #boots{
+        width: 100vw;
       }
     }
 
