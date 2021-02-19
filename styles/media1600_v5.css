@@ -43,11 +43,16 @@
   body #screen1 {
     height: 100vh; }
   body #screen1_back {
-    background-image: url("../img/screen1/back_wide.svg");
-    height: 100vh; }
+    background-image: url(../img/screen1/back_wide.svg);
+    height: 110vh;
+    right: -238px; }
+  body #screen1_content_anim {
+    width: fit-content;
+    height: fit-content;
+    margin: auto 0; }
   body #screen1_content {
     width: 460px;
-    margin-top: 172px;
+    margin-top: 0;
     margin-left: 13.5vw; }
     body #screen1_content p:first-of-type {
       font-size: 14px; }
@@ -157,7 +162,7 @@
         font-size: 25px; }
       body #screen6_content .row > div p {
         font-size: 17px;
-        line-height: 41px; }
+        line-height: 33px; }
     body #screen6_content .row > div:hover {
       background-color: #0E77E6; }
       body #screen6_content .row > div:hover h2 {

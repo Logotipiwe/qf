@@ -4,14 +4,24 @@
     overflow-y: auto;
     height: auto; }
     body #logo {
-      margin: 30px auto; }
+      margin: 30px auto;
+      height: auto; }
     body main {
       width: 90vw;
       margin: 30px 0; }
       body main #first_row {
         flex-direction: column; }
+        body main #first_row #account .info {
+          width: auto; }
+        body main #first_row #key_panel #key_field {
+          width: auto; }
         body main #first_row .panel {
           height: auto; }
+          body main #first_row .panel .title {
+            height: 60px; }
+          body main #first_row .panel .panel_content {
+            padding: 20px 0;
+            justify-content: center; }
       body main .panel {
         height: auto;
         width: 100%; }
@@ -38,6 +48,14 @@
     margin: 20px 0; } }
 
 @media (max-width: 424px) {
+  body .button {
+    height: 55px;
+    font-size: 16px; }
+  body #logo img {
+    height: 55px; }
+  body #logo span {
+    font-size: 24px;
+    margin-bottom: 11px; }
   body #account .info {
     justify-content: space-between; }
     body #account .info img {

@@ -151,12 +151,16 @@ body {
     flex-direction: column;
     height: 100vh
   }
+  #screen1_content_anim{
+    width: fit-content;
+    height: fit-content;
+    margin: auto 0;
+  }
 
   #screen1_content {
-    z-index: 10;
-    margin-top: 19.3vh;
-    margin-left: 4.3vw;
-    width: 350px;
+    width: 460px;
+    margin-top: 0;
+    margin-left: 6.5vw;
     flex-direction: column;
 
     p:first-of-type {

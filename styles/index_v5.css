@@ -105,11 +105,14 @@ body {
   body #screen1 {
     flex-direction: column;
     height: 100vh; }
+  body #screen1_content_anim {
+    width: fit-content;
+    height: fit-content;
+    margin: auto 0; }
   body #screen1_content {
-    z-index: 10;
-    margin-top: 19.3vh;
-    margin-left: 4.3vw;
-    width: 350px;
+    width: 460px;
+    margin-top: 0;
+    margin-left: 6.5vw;
     flex-direction: column; }
     body #screen1_content p:first-of-type {
       font-size: 12.3px;

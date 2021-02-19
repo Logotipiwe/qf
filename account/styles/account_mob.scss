@@ -6,6 +6,7 @@
     
     #logo{
       margin: 30px auto;
+      height: auto;
     }
     main{
       width: 90vw;
@@ -13,8 +14,27 @@
       #first_row{
         flex-direction: column;
 
+        #account{
+          .info{
+            width: auto;
+          }
+        }
+        #key_panel{
+          #key_field{
+            width: auto;
+          }
+        }
         .panel{
           height: auto;
+
+          .title{
+            height: 60px;
+          }
+
+          .panel_content{
+            padding: 20px 0;
+            justify-content: center;
+          }
         }
       }
       .panel{
@@ -67,6 +87,19 @@
 }
 @media (max-width: 424px) {
   body{
+    .button{
+      height: 55px;
+      font-size: 16px;
+    }
+    #logo{
+      img{
+        height: 55px;
+      }
+      span{
+        font-size: 24px;
+        margin-bottom: 11px;
+      }
+    }
     #account{
       .info{
         justify-content: space-between;

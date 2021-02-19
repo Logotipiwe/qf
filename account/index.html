@@ -10,8 +10,10 @@
 </head>
 <body>
 <div id="logo">
-    <img src="../img/screen1/logo_header.svg" alt="">
-    <span>Quantum Flips</span>
+    <a href="../">
+        <img src="../img/screen1/logo_header.svg" alt="">
+        <span>Quantum Flips</span>
+    </a>
 </div>
 <main>
     <div id="first_row">
@@ -20,11 +22,13 @@
                 <img src="img/user.svg" alt="">
                 <span>Аккаунт</span>
             </div>
-            <div class="info">
-                <img src="img/avatar.png" alt="" id="avatar">
-                <div>
-                    <span id="login">beibaris.fig#1118</span>
-                    <span id="email">beybaris.balobolov@mail.ru</span>
+            <div class="panel_content">
+                <div class="info">
+                    <img src="img/avatar.png" alt="" id="avatar">
+                    <div>
+                        <span id="login">beibaris.fig#1118</span>
+                        <span id="email">beybaris.balobolov@mail.ru</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -33,10 +37,12 @@
                 <img src="img/key.svg" alt="">
                 <span>Ключ</span>
             </div>
-            <div id="key_field">
-                <input value="TVMSFYH">
-                <img src="img/copy.svg" alt="">
-                <img src="img/hide_inp.svg" alt="">
+            <div class="panel_content">
+                <div id="key_field">
+                    <input value="TVMSFYH">
+                    <button><img src="img/copy.svg" alt=""></button>
+                    <button><img src="img/hide_inp.svg" alt=""></button>
+                </div>
             </div>
         </div>
     </div>
@@ -56,15 +62,18 @@
     </div>
     <div id="buttons_row">
         <button class="button">
-            <img src="img/discord_logo.svg" alt="">
+            <img src="img/discord_logo.svg" alt="" class="button_img">
+            <img src="img/discord_logo_hover.svg" alt="" class="button_img_hover">
             <span>Join Discord</span>
         </button>
         <button class="button">
-            <img src="img/link.svg" alt="">
+            <img src="img/link.svg" alt="" class="button_img">
+            <img src="img/link_hover.svg" alt="" class="button_img_hover">
             <span>Unbind Key</span>
         </button>
         <button class="button">
-            <img src="img/logout.svg" alt="">
+            <img src="img/logout.svg" alt="" class="button_img">
+            <img src="img/logout_hover.svg" alt="" class="button_img_hover">
             <span>Sign Out</span>
         </button>
     </div>
