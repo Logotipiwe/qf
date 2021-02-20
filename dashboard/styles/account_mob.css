@@ -3,26 +3,33 @@
     margin: 0;
     overflow-y: auto;
     height: auto; }
-    body #logo {
-      margin: 30px auto;
-      height: auto; }
+    body #side {
+      display: none;
+      position: fixed;
+      left: 0;
+      width: 80vw;
+      height: 100vh;
+      background-color: rgba(255, 255, 255, 0.9); }
+      body #side #logo {
+        margin: 30px auto;
+        height: auto; }
     body main {
       width: 90vw;
       margin: 30px 0; }
-      body main #first_row {
+      body main #main_content #first_row {
         flex-direction: column; }
-        body main #first_row #account .info {
+        body main #main_content #first_row #account .info {
           width: auto; }
-        body main #first_row #key_panel #key_field {
-          width: auto; }
-        body main #first_row .panel {
+        body main #main_content #first_row #key_panel #key_field {
+          width: 100%; }
+        body main #main_content #first_row .panel {
           height: auto; }
-          body main #first_row .panel .title {
+          body main #main_content #first_row .panel .title {
             height: 60px; }
-          body main #first_row .panel .panel_content {
-            padding: 20px 0;
+          body main #main_content #first_row .panel .panel_content {
+            padding: 20px;
             justify-content: center; }
-      body main .panel {
+      body main #main_content .panel {
         height: auto;
         width: 100%; }
     body #info_panel {
@@ -36,32 +43,27 @@
     height: auto; }
     body #key_panel #key_field input {
       width: 80%; }
-    body main #buttons_row {
+    body main #main_content #first_row .panel .panel_content {
+      padding: 10px; }
+    body main #main_content #buttons_row {
       flex-direction: column; }
-      body main #buttons_row .button {
+      body main #main_content #buttons_row .button {
         width: 80%;
         align-self: center; }
-      body main #buttons_row .button:not(:last-child) {
+      body main #main_content #buttons_row .button:not(:last-child) {
         margin-right: 0;
-        margin-bottom: 20px; }
-  #agree {
-    margin: 20px 0; } }
+        margin-bottom: 20px; } }
 
 @media (max-width: 424px) {
   body .button {
     height: 55px;
     font-size: 16px; }
-  body #logo img {
-    height: 55px; }
-  body #logo span {
-    font-size: 24px;
-    margin-bottom: 11px; }
   body #account .info {
     justify-content: space-between; }
     body #account .info img {
       height: 60px;
       width: 60px;
-      margin: 0; }
+      margin: 0 15px 0 0; }
     body #account .info > div #login {
       font-size: 16px; }
     body #account .info > div #email {
@@ -73,7 +75,10 @@
       font-size: 12px; }
   body #info_panel {
     padding: 15px; }
-  body main .panel {
-    padding: 0 17px 17px; }
-    body main .panel .title {
-      margin: 14px 0; } }
+  body #side #logo img {
+    height: 55px; }
+  body #side #logo span {
+    font-size: 24px;
+    margin-bottom: 11px; }
+  body main #main_content .panel .title {
+    margin: 14px 0; } }
