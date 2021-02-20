@@ -1,14 +1,14 @@
 window.onload = ()=>{
     const scrollFunc = ()=>{
-        const screens = document.getElementsByClassName('screen');
-        Array.from(screens).forEach((screen, i)=>{
+        const animBlocks = document.getElementsByClassName('to_anim');
+        Array.from(animBlocks).forEach((elem, i)=>{
             //доля экрана снизу, ниже которой находится верх блока (сверху страницы - 1, снизу страницы - 0, ниже страницы - минусовые)
-            const screenTopPosInWindow = (window.innerHeight - screen.getBoundingClientRect().top)/window.innerHeight;
-            const animClass = 'anim_screen';
-            console.log(i, screenTopPosInWindow.toFixed(2));
+            const screenTopPosInWindow = (window.innerHeight - elem.getBoundingClientRect().top)/window.innerHeight;
+            const animClass = 'anim';
             const animateWindowPos = 0.3; //до какой части экрана должен дойти верх блока чтобы его анимировало
-            if(screenTopPosInWindow > animateWindowPos && !screen.className.includes(animClass)) {
-                screen.setAttribute('class', [...screen.classList, 'anim'].join(' '));
+            const elemClasses = elem.className.split(' ');
+            if(screenTopPosInWindow > animateWindowPos && !elemClasses.includes(animClass)) {
+                elem.setAttribute('class', [...elem.classList, animClass].join(' '));
             }
         })
     }

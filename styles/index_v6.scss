@@ -151,7 +151,8 @@ body {
     flex-direction: column;
     height: 100vh
   }
-  #screen1_content_anim{
+
+  #screen1_content_anim {
     width: fit-content;
     height: fit-content;
     margin: auto 0;
@@ -239,11 +240,11 @@ body {
       //display: none;
     }
 
-    #screen2_title{
+    #screen2_title {
       flex-direction: column;
       height: 92px;
 
-      >div:nth-child(2){
+      > div:nth-child(2) {
         margin-top: 22px;
       }
     }
@@ -368,7 +369,7 @@ body {
     background-position: top;
     background-size: cover;
 
-    #boots{
+    #boots {
       width: 54vw;
     }
   }
@@ -462,12 +463,15 @@ body {
           transition: .3s color;
         }
       }
-      >div:hover{
+
+      > div:hover {
         background-color: #0E77E6;
-        h2{
+
+        h2 {
           color: white;
         }
-        p{
+
+        p {
           color: white;
         }
       }
@@ -505,37 +509,36 @@ body {
     }
   }
 
-  .screen .to_anim {
+  .to_anim {
     position: relative;
     opacity: 0;
   }
 
-  .screen.anim {
-    .to_anim {
-      animation: 1s ease-in-out forwards;
-    }
 
-    .anim_right {
-      animation-name: slide_right;
-    }
-
-    .anim_left {
-      animation-name: slide_left;
-    }
-
-    .anim_top {
-      animation-name: slide_top;
-    }
-
-    .anim_bottom_right{
-      animation-name: slide_bottom_right;
-    }
-
-    .anim_bottom_left{
-      animation-name: slide_bottom_right;
-    }
-
+  .to_anim.anim {
+    animation: 1s ease-in-out forwards;
   }
+
+  .anim.anim_right {
+    animation-name: slide_right;
+  }
+
+  .anim.anim_left {
+    animation-name: slide_left;
+  }
+
+  .anim.anim_top {
+    animation-name: slide_top;
+  }
+
+  .anim.anim_bottom_right {
+    animation-name: slide_bottom_right;
+  }
+
+  .anim.anim_bottom_left {
+    animation-name: slide_bottom_right;
+  }
+  
 
   .screen.to_anim {
     position: relative;
@@ -557,7 +560,8 @@ body {
   .screen.anim.anim_top {
     animation-name: slide_top;
   }
-  .screen.anim.anim_bottom_left{
+
+  .screen.anim.anim_bottom_left {
     animation-name: slide_bottom_right;
   }
 }

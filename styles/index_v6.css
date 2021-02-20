@@ -325,20 +325,20 @@ body {
         font-weight: 600;
         margin-left: 37px;
         margin-bottom: 10px; }
-  body .screen .to_anim {
+  body .to_anim {
     position: relative;
     opacity: 0; }
-  body .screen.anim .to_anim {
+  body .to_anim.anim {
     animation: 1s ease-in-out forwards; }
-  body .screen.anim .anim_right {
+  body .anim.anim_right {
     animation-name: slide_right; }
-  body .screen.anim .anim_left {
+  body .anim.anim_left {
     animation-name: slide_left; }
-  body .screen.anim .anim_top {
+  body .anim.anim_top {
     animation-name: slide_top; }
-  body .screen.anim .anim_bottom_right {
+  body .anim.anim_bottom_right {
     animation-name: slide_bottom_right; }
-  body .screen.anim .anim_bottom_left {
+  body .anim.anim_bottom_left {
     animation-name: slide_bottom_right; }
   body .screen.to_anim {
     position: relative;
