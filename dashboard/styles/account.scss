@@ -3,6 +3,8 @@ div{
   box-sizing: border-box;
 }
 
+$back_item_size: 800px;
+
 body{
   display: flex;
   width: 100vw;
@@ -75,9 +77,18 @@ body{
     flex-grow: 1;
     height: 100%;
     justify-content: center;
-    background-image: url("../img/db_back.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
+
+    .back_item{
+      position: absolute;
+      height: $back_item_size;
+      width: $back_item_size;
+      z-index: -1;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url("../img/background/item5.svg");
+      //animation-duration: 20s;
+      //animation-iteration-count: infinite;
+    }
 
     #main_content {
       width: 938px;
@@ -301,7 +312,144 @@ body{
       color: #FF404D;
     }
   }
+
+  .back_item{
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+  }
+  #back_item_1{
+    animation-name: back_1;
+    animation-duration: 20s;
+  };
+  #back_item_2{animation-name: back_2};
+  #back_item_3{
+    animation-name: back_3;
+    animation-delay: 2s;
+    animation-duration: 30s;
+  };
+  #back_item_4{
+    animation-name: back_4;
+    animation-duration: 45s;
+  };
+  #back_item_5{
+    animation-name: back_5;
+    animation-duration: 25s;
+  }
+  #back_item_6{
+    animation-delay: 5s;
+    animation-name: back_6;
+    animation-duration: 20s;
+  }
 }
+@keyframes back_1 {
+  0%{
+    top: calc(100vh);
+    left: 0;
+    transform: rotate(0deg);
+  }
+  30%{
+    top: calc(50vh - 400px);
+    left: calc(100vw - 600px);
+  }
+  60%{
+    top: -800px;
+    left: 0;
+    transform: rotate(180deg);
+  }
+  100%{
+    top: -800px;
+    left: 0;
+    transform: rotate(180deg);
+  }
+}
+@keyframes back_2 {
+  from{
+    top: 0;
+    left: 0;
+    transform: rotate(180deg);
+  }
+  60%{
+    top: 100vh;
+    left: 100vw;
+    transform: rotate(0deg);
+  }
+  100%{
+    top: 100vh;
+    left: 100vw;
+    transform: rotate(0deg);
+  }
+}
+@keyframes back_3 {
+  from{
+    top: -800px;
+    left: 50vw;
+    transform: rotate(180deg);
+  }
+  60%{
+    top: 100vh;
+    left: 20vw;
+    transform: rotate(0deg);
+  }
+  100%{
+    top: 100vh;
+    left: 20vw;
+    transform: rotate(0deg);
+  }
+}
+@keyframes back_4 {
+  from{
+    top: 50vh;
+    right: calc(100vw + 800px);
+    transform: rotate(180deg);
+  }
+  60%{
+    top: -20vh;
+    right: -800px;
+    transform: rotate(0deg);
+  }
+  100%{
+    top: -20vh;
+    right: -800px;
+    transform: rotate(0deg);
+  }
+}
+@keyframes back_5 {
+  from{
+    top: -800px;
+    right: 800px;
+    transform: rotate(180deg);
+  }
+  60%{
+    top: 800px;
+    right: -800px;
+    transform: rotate(-180deg);
+  }
+  100%{
+    top: 800px;
+    right: -800px;
+    transform: rotate(-180deg);
+  }
+}
+@keyframes back_6 {
+  from{
+    top: 100vh;
+    right: calc(50vw - 400px);
+    transform: rotate(0deg);
+  }
+  60%{
+    top: -800px;
+    right: 400px;
+    transform: rotate(230deg);
+  }
+  100%{
+    top: 800px;
+    right: -800px;
+    transform: rotate(400deg);
+  }
+}
+
 @media (max-width: 1400px) {
   body{
     .button{

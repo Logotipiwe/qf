@@ -25,7 +25,29 @@
       margin-left: 21px;
       margin-top: -11px; }
     body #header #header_right {
-      display: none; }
+      position: absolute;
+      display: flex;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: max-content;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.95);
+      align-items: flex-start;
+      padding: 23px; }
+      body #header #header_right > nav {
+        margin: 0;
+        margin-bottom: 10px;
+        width: max-content;
+        font-size: 20px;
+        color: #0E77E6;
+        font-weight: 600; }
+      body #header #header_right > nav:first-child {
+        color: #0E77E6;
+        text-decoration: underline;
+        font-size: 21px; }
+      body #header #header_right #db_link {
+        margin: 0; }
     body #header #header_burger {
       display: flex;
       height: 25px;

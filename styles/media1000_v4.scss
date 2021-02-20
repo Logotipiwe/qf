@@ -45,7 +45,33 @@
       }
 
       #header_right {
-        display: none;
+        position: absolute;
+        display: flex;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: max-content;
+        flex-direction: column;
+        background-color: rgba(255,255,255, 0.95);
+        align-items: flex-start;
+        padding: 23px;
+
+        >nav{
+          margin: 0;
+          margin-bottom: 10px;
+          width: max-content;
+          font-size: 20px;
+          color: #0E77E6;
+          font-weight: 600;
+        }
+        >nav:first-child{
+          color: #0E77E6;
+          text-decoration: underline;
+          font-size: 21px;
+        }
+        #db_link{
+          margin: 0;
+        }
       }
 
       #header_burger {
