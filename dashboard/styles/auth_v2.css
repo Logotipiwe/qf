@@ -17,47 +17,49 @@ body {
   flex-direction: column;
   margin: 0; }
   body #logo {
-    margin-top: 105px;
+    margin-top: 78px;
     align-items: center;
     justify-content: space-between; }
+    body #logo img {
+      height: 58px; }
     body #logo span {
-      margin-left: 29px;
-      font-size: 28px;
+      margin-left: 25px;
+      font-size: 21px;
       color: #2A356B;
       font-weight: bolder; }
   body #form {
     margin: auto;
-    width: 665px;
+    width: 500px;
     flex-direction: column; }
     body #form #field {
-      height: 250px;
+      height: 185px;
       flex-direction: column;
-      margin-bottom: 24px;
+      margin-bottom: 18px;
       background: rgba(255, 255, 255, 0.63);
-      border-radius: 20px;
+      border-radius: 15px;
       align-items: center;
-      padding: 38px 35px;
+      padding: 31px 27px;
       justify-content: space-between; }
       body #form #field #title {
         align-items: center; }
         body #form #field #title img {
-          margin-right: 24px; }
+          margin-right: 18px; }
         body #form #field #title span {
-          font-size: 19px;
+          font-size: 15px;
           color: #2A356A;
           font-weight: 500; }
       body #form #field input {
         width: 100%;
-        height: 70px;
+        height: 52px;
         outline: none;
         background: linear-gradient(0deg, rgba(213, 227, 242, 0.29) -345.83%, rgba(213, 227, 242, 0) 282.5%);
         border: 1px solid #DCE7F3;
         box-sizing: border-box;
-        border-radius: 12px;
-        padding-left: 18px;
-        font-size: 17px; }
+        border-radius: 9px;
+        padding-left: 14px;
+        font-size: 13px; }
     body #form a {
-      height: 83px;
+      height: 62px;
       width: 100%;
       text-decoration: none; }
     body #form button {
@@ -67,18 +69,18 @@ body {
       align-items: center;
       justify-content: center;
       color: white;
-      font-size: 19px;
+      font-size: 16px;
       background: #006EEF;
       box-shadow: 0 14px 26px -12px rgba(7, 101, 221, 0.34);
-      border-radius: 11px;
+      border-radius: 9px;
       outline: none;
       border: none;
       cursor: pointer; }
       body #form button img {
-        margin-right: 20px; }
+        margin-right: 15px; }
     body #form button:hover {
       background-color: #1178ef; }
   body #agree {
-    margin-bottom: 57px;
+    margin-bottom: 70px;
     cursor: pointer;
-    font-size: 16px; }
+    font-size: 12px; }

@@ -45,33 +45,54 @@
       }
 
       #header_right {
+        //display: none;
+        padding: 0;
         position: absolute;
-        display: flex;
+        align-items: center;
+        opacity: 0;
+        height: 0;
+        transition: .5s opacity;
         top: 0;
         left: 0;
         width: 100vw;
-        height: max-content;
         flex-direction: column;
         background-color: rgba(255,255,255, 0.95);
-        align-items: flex-start;
-        padding: 23px;
+        overflow: hidden;
 
         >nav{
+          color: #2A356B;
           margin: 0;
-          margin-bottom: 10px;
+          margin-bottom: 35px;
           width: max-content;
           font-size: 20px;
-          color: #0E77E6;
           font-weight: 600;
         }
         >nav:first-child{
-          color: #0E77E6;
+          color: #2A356B;
+          margin: 0;
+          margin-bottom: 35px;
+          margin-top: 23px;
           text-decoration: underline;
           font-size: 21px;
         }
         #db_link{
           margin: 0;
         }
+      }
+      #header_right.opened{
+        height: 100vh;
+        opacity: 1;
+
+        #header_bottom{
+          display: flex;
+          flex-grow: 1;
+          width: 100%;
+          padding: 20px;
+        }
+      }
+      #header_right.closing{
+        height: 100vh;
+        opacity: 0;
       }
 
       #header_burger {

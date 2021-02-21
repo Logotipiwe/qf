@@ -100,6 +100,8 @@ body {
         body #header #header_right #db_link span {
           color: white;
           font-size: 15px; }
+      body #header #header_right #header_bottom {
+        display: none; }
     body #header #header_burger {
       display: none; }
   body #screen1 {

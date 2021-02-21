@@ -1,8 +1,12 @@
 @media (max-width: 1200px) {
   body{
-    margin: 0;
     overflow-y: auto;
     height: auto;
+
+    .back_item{
+      display: none;
+      animation-name: none;
+    }
 
     #side{
       display: none;

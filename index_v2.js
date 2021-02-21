@@ -15,4 +15,23 @@ window.onload = ()=>{
 
     window.onscroll = scrollFunc;
     scrollFunc();
+
+    console.log(Object.keys(document.getElementById('header_burger')));
+
+    document.getElementById('header_burger').onclick = ()=>{
+        const body = document.getElementsByTagName('body')[0];
+        if(body) body.style.overflowY = 'hidden';
+        document.getElementById('header_right').className += ' opened'
+    }
+    document.getElementById('header_bottom').onclick = ()=>{
+        const elem = document.getElementById('header_right');
+        let openedClassName = 'opened';
+        let closedClassName = 'closing';
+        elem.className = elem.className.replace(openedClassName,closedClassName);
+        const body = document.getElementsByTagName('body')[0];
+        if(body) body.style.overflowY = 'initial';
+        setTimeout(()=>{
+            elem.className = elem.className.replace(closedClassName, '').trim();
+        }, 500)
+    }
 }
