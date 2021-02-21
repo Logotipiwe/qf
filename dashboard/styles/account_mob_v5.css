@@ -22,7 +22,7 @@
         flex-direction: column; }
         body main #main_content #first_row #account .info {
           width: auto; }
-        body main #main_content #first_row #key_panel #key_field {
+        body main #main_content #first_row .key_field {
           width: 100%; }
         body main #main_content #first_row .panel {
           height: auto; }
@@ -43,7 +43,7 @@
 @media (max-width: 600px) {
   body {
     height: auto; }
-    body #key_panel #key_field input {
+    body .key_field input {
       width: 80%; }
     body main #main_content #first_row .panel .panel_content {
       padding: 10px; }
@@ -70,10 +70,10 @@
       font-size: 16px; }
     body #account .info > div #email {
       font-size: 13px; }
-  body #key_panel #key_field {
+  body .key_field {
     padding: 9px 5px 9px 0;
     height: 49px; }
-    body #key_panel #key_field input {
+    body .key_field input {
       font-size: 12px; }
   body #info_panel {
     padding: 15px; }

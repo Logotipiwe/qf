@@ -37,10 +37,8 @@
             }
           }
 
-          #key_panel {
-            #key_field {
-              width: 100%;
-            }
+          .key_field {
+            width: 100%;
           }
 
           .panel {
@@ -78,11 +76,9 @@
   body{
     height: auto;
 
-    #key_panel{
-      #key_field{
-        input{
-          width: 80%;
-        }
+    .key_field{
+      input{
+        width: 80%;
       }
     }
 
@@ -139,16 +135,16 @@
         }
       }
     }
-    #key_panel{
-      #key_field{
-        padding: 9px 5px 9px 0;
-        height: 49px;
 
-        input{
-          font-size: 12px;
-        }
+    .key_field{
+      padding: 9px 5px 9px 0;
+      height: 49px;
+
+      input{
+        font-size: 12px;
       }
     }
+
     #info_panel{
       padding: 15px;
     }

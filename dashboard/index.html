@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <title>Dashboard</title>
     <link rel="stylesheet" href="../styles/fonts.css">
-    <link rel="stylesheet" href="styles/account_v5.css">
-    <link rel="stylesheet" href="styles/account_mob_v4.css">
+    <link rel="stylesheet" href="styles/account_v6.css">
+    <link rel="stylesheet" href="styles/account_mob_v5.css">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script src="index.js"></script>
 </head>
 <body>
 <div id="back_item_1" class="back_item"></div>
@@ -23,28 +24,31 @@
         </a>
     </div>
     <div id="side_buttons">
-        <nav>
+        <nav class="selected side_button" data-page="1">
             <button class="button">
-                <img src="img/home.svg" alt="">
+                <img src="img/home.svg" alt="" class="img">
+                <img src="img/home_hover.svg" alt="" class="img_hover">
                 <span>Main</span>
             </button>
         </nav>
-        <nav>
+        <nav class="side_button" data-page="2">
             <button class="button">
-                <img src="img/time.svg" alt="">
+                <img src="img/time.svg" alt="" class="img">
+                <img src="img/time_hover.svg" alt="" class="img_hover">
                 <span>Restocks</span>
             </button>
         </nav>
-        <nav>
+        <nav class="side_button" data-page="3">
             <button class="button">
-                <img src="img/user_circle.svg" alt="">
+                <img src="img/user_circle.svg" alt="" class="img">
+                <img src="img/user_circle_hover.svg" alt="" class="img_hover">
                 <span>Users</span>
             </button>
         </nav>
     </div>
 </div>
 <main>
-    <div id="main_content">
+    <div class="main_content" id="main_content_1">
         <div id="first_row">
             <div id="account" class="panel">
                 <div class="title">
@@ -67,7 +71,7 @@
                     <span>Ключ</span>
                 </div>
                 <div class="panel_content">
-                    <div id="key_field">
+                    <div class="key_field">
                         <input/>
                         <button><img src="img/copy.svg" alt=""></button>
                         <button><img src="img/hide_inp.svg" alt=""></button>
@@ -106,6 +110,163 @@
                 <span>Sign Out</span>
             </button>
         </div>
+    </div>
+    <div class="main_content" id="main_content_2">
+        <div id="interface">
+            <button class="button">
+                <img src="img/plus.svg" alt="">
+                <span>Add new</span>
+            </button>
+            <div class="key_field">
+                <input>
+                <img src="img/zoom.svg" alt="">
+            </div>
+        </div>
+        <div id="table">
+            <div id="head_back"></div>
+            <table border="0" cellpadding="0" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Status</th>
+                        <th>Stock</th>
+                        <th>Sold</th>
+                        <th>Password</th>
+                        <th>Link</th>
+                        <th>Price</th>
+                        <th>Trial days</th>
+                        <th>Initial payment</th>
+                        <th>Sellout time</th>
+                        <th>Created at</th>
+                        <th>Last style</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>
+                        <img src="img/status_green.svg" alt="" class="status_img">
+                    </td>
+                    <td>12</td>
+                    <td>72</td>
+                    <td>demo</td>
+                    <td>
+                        <button><img src="img/copy.svg" alt=""></button>
+                        <button><img src="img/copy.svg" alt=""></button>
+                    </td>
+                    <td>$30/m</td>
+                    <td>30</td>
+                    <td>$215</td>
+                    <td>-</td>
+                    <td>22.06.20 23:29</td>
+                    <td>22.06.20 23:29</td>
+                    <td>
+                        <button><img src="img/pause.svg" alt=""></button>
+                        <button><img src="img/delete.svg" alt=""></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="img/status_green.svg" alt="" class="status_img">
+                    </td>
+                    <td>12</td>
+                    <td>72</td>
+                    <td>demo</td>
+                    <td>
+                        <button><img src="img/copy.svg" alt=""></button>
+                        <button><img src="img/copy.svg" alt=""></button>
+                    </td>
+                    <td>$30/m</td>
+                    <td>30</td>
+                    <td>$215</td>
+                    <td>-</td>
+                    <td>22.06.20 23:29</td>
+                    <td>22.06.20 23:29</td>
+                    <td>
+                        <button><img src="img/pause.svg" alt=""></button>
+                        <button><img src="img/delete.svg" alt=""></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="img/status_green.svg" alt="" class="status_img">
+                    </td>
+                    <td>12</td>
+                    <td>72</td>
+                    <td>demo</td>
+                    <td>
+                        <button><img src="img/copy.svg" alt=""></button>
+                        <button><img src="img/copy.svg" alt=""></button>
+                    </td>
+                    <td>$30/m</td>
+                    <td>30</td>
+                    <td>$215</td>
+                    <td>-</td>
+                    <td>22.06.20 23:29</td>
+                    <td>22.06.20 23:29</td>
+                    <td>
+                        <button><img src="img/pause.svg" alt=""></button>
+                        <button><img src="img/delete.svg" alt=""></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="img/status_green.svg" alt="" class="status_img">
+                    </td>
+                    <td>12</td>
+                    <td>72</td>
+                    <td>demo</td>
+                    <td>
+                        <button><img src="img/copy.svg" alt=""></button>
+                        <button><img src="img/copy.svg" alt=""></button>
+                    </td>
+                    <td>$30/m</td>
+                    <td>30</td>
+                    <td>$215</td>
+                    <td>-</td>
+                    <td>22.06.20 23:29</td>
+                    <td>22.06.20 23:29</td>
+                    <td>
+                        <button><img src="img/pause.svg" alt=""></button>
+                        <button><img src="img/delete.svg" alt=""></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="img/status_green.svg" alt="" class="status_img">
+                    </td>
+                    <td>12</td>
+                    <td>72</td>
+                    <td>demo</td>
+                    <td>
+                        <button><img src="img/copy.svg" alt=""></button>
+                        <button><img src="img/copy.svg" alt=""></button>
+                    </td>
+                    <td>$30/m</td>
+                    <td>30</td>
+                    <td>$215</td>
+                    <td>-</td>
+                    <td>22.06.20 23:29</td>
+                    <td>22.06.20 23:29</td>
+                    <td>
+                        <button><img src="img/pause.svg" alt=""></button>
+                        <button><img src="img/delete.svg" alt=""></button>
+                    </td>
+                </tr>
+            </table>
+            <div id="table_footer">
+                <div id="status_check">
+                    <button><img src="img/checkbox.svg" alt=""></button>
+                    <span>Status</span>
+                </div>
+                <div id="pagination">
+                    <span>1-5 of 5</span>
+                    <button><img src="img/arrow_left.svg" alt=""></button>
+                    <button><img src="img/arrow_right.svg" alt=""></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main_content" id="main_content_3">
+        <h2>3</h2>
     </div>
 </main>
 </body>
