@@ -13,7 +13,7 @@ body {
 
   margin: 0;
 
-  font-family: "TT Norms", sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: #F3F5F9;
 
   #side {
@@ -149,16 +149,24 @@ body {
           margin-right: 15px;
           flex-basis: 42%;
         }
+
+        #key_panel{
+          .panel_content{
+            width: 100%;
+            padding-left: 27px;
+            padding-right: 27px;
+          }
+        }
       }
     }
 
-    #main_content_2 {
+    #main_content_2,#main_content_3 {
       margin: auto;
       height: 630px;
       width: 980px;
       flex-direction: column;
 
-      #interface {
+      .interface {
         margin-bottom: 15px;
 
         .button {
@@ -179,7 +187,7 @@ body {
         }
       }
 
-      #table {
+      .table {
         flex-grow: 1;
         padding: 11px 30px;
         background: linear-gradient(177.41deg, #F9FAFC 2.16%, rgba(249, 250, 252, 0.85) 183.02%);
@@ -189,25 +197,31 @@ body {
         font-weight: 500;
         flex-direction: column;
 
-        #head_back {
+        .head_back {
           position: absolute;
           width: 100%;
           top: 0;
           left: 0;
           background: linear-gradient(360deg, rgba(221, 236, 255, 0.17) -5%, rgba(221, 236, 255, 0.0204) 115%);
-          height: 85px;
+          height: 75px;
         }
 
         table {
           width: 100%;
           border-collapse: separate;
           border-spacing: 0 19px;
+          color: #2A356B;
 
           thead {
             tr {
               th {
-                font-size: 11px;
-                text-align: left;
+                font-size: 10px;
+                text-align: center;
+
+                .arr_down{
+                  width: 9px;
+                  margin-left: 9px;
+                }
               }
               th:first-child{
                 padding-left: 15px;
@@ -218,7 +232,7 @@ body {
             }
           }
           tbody:before {
-            line-height: 18px;
+            line-height: 9px;
             content: "\200C";
             display: block;
           }
@@ -230,6 +244,7 @@ body {
               border-spacing: 0 10px;
 
               td {
+                font-size: 11px;
                 text-align: center;
                 background: linear-gradient(144.24deg, #FFFFFF -25.25%, rgba(255, 255, 255, 0.62) 194.65%);
 
@@ -242,6 +257,7 @@ body {
                   padding: 0;
                   margin: 0 3px;
                   height: 25px;
+                  cursor: pointer;
                   img{
                     height: 25px;
                   }
@@ -262,7 +278,7 @@ body {
           }
         }
 
-        #table_footer{
+        .table_footer{
           height: 53px;
           align-items: center;
           justify-content: space-between;
@@ -273,6 +289,7 @@ body {
             padding: 0;
             height: 30px;
             width: 30px;
+            cursor: pointer;
             img{
               height: 100%;
               width: 100%;
@@ -282,7 +299,7 @@ body {
             outline: 1px lightgray solid;
           }
 
-          #status_check{
+          .status_check{
             align-items: center;
 
             span{
@@ -290,9 +307,10 @@ body {
               margin-left: 19px;
             }
           }
-          #pagination{
+          .pagination{
             align-items: center;
             button{
+              cursor: pointer;
               margin-left: 7px;
             }
             span{

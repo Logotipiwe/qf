@@ -18,5 +18,5 @@ window.onload = ()=>{
         })
     })
 
-    document.getElementsByClassName('side_button')[1].click();
+    // document.getElementsByClassName('side_button')[2].click();
 }

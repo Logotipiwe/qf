@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="../styles/fonts.css">
-    <link rel="stylesheet" href="styles/account_v6.css">
+    <link rel="stylesheet" href="../fonts/monserrat/montserrat.css">
+    <link rel="stylesheet" href="styles/account_v8.css">
     <link rel="stylesheet" href="styles/account_mob_v5.css">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <script src="index.js"></script>
+    <script src="index_v2.js"></script>
 </head>
 <body>
 <div id="back_item_1" class="back_item"></div>
@@ -111,8 +111,8 @@
             </button>
         </div>
     </div>
-    <div class="main_content" id="main_content_2">
-        <div id="interface">
+    <div class="main_content" id="main_content_2" style="display: none">
+        <div class="interface">
             <button class="button">
                 <img src="img/plus.svg" alt="">
                 <span>Add new</span>
@@ -122,8 +122,8 @@
                 <img src="img/zoom.svg" alt="">
             </div>
         </div>
-        <div id="table">
-            <div id="head_back"></div>
+        <div class="table">
+            <div class="head_back"></div>
             <table border="0" cellpadding="0" cellspacing="0">
                 <thead>
                     <tr>
@@ -136,7 +136,7 @@
                         <th>Trial days</th>
                         <th>Initial payment</th>
                         <th>Sellout time</th>
-                        <th>Created at</th>
+                        <th>Created at <img src="img/arrow_down.svg" alt="" class="arr_down"></th>
                         <th>Last style</th>
                         <th>Actions</th>
                     </tr>
@@ -252,12 +252,12 @@
                     </td>
                 </tr>
             </table>
-            <div id="table_footer">
-                <div id="status_check">
+            <div class="table_footer">
+                <div class="status_check">
                     <button><img src="img/checkbox.svg" alt=""></button>
                     <span>Status</span>
                 </div>
-                <div id="pagination">
+                <div class="pagination">
                     <span>1-5 of 5</span>
                     <button><img src="img/arrow_left.svg" alt=""></button>
                     <button><img src="img/arrow_right.svg" alt=""></button>
@@ -265,8 +265,182 @@
             </div>
         </div>
     </div>
-    <div class="main_content" id="main_content_3">
-        <h2>3</h2>
+    <div class="main_content" id="main_content_3" style="display: none">
+        <div class="interface">
+            <button class="button">
+                <img src="img/plus.svg" alt="">
+                <span>Add new</span>
+            </button>
+            <div class="key_field">
+                <input>
+                <img src="img/zoom.svg" alt="">
+            </div>
+        </div>
+        <div class="table">
+            <div class="head_back"></div>
+            <table border="0" cellpadding="0" cellspacing="0">
+                <thead>
+                <tr>
+                    <th>Status</th>
+                    <th>Plan type</th>
+                    <th>E-mail</th>
+                    <th>Username</th>
+                    <th>Discord ID</th>
+                    <th>Lic. key</th>
+                    <th>Price</th>
+                    <th>Customer</th>
+                    <th>Created at <img src="img/arrow_down.svg" alt="" class="arr_down"></th>
+                    <th>Actions</th>
+                </tr>
+                </thead>
+                <tr>
+                    <td>
+                        <img src="img/status_green.svg" alt="" class="status_img">
+                    </td>
+                    <td>Renewal</td>
+                    <td>beybaris@mail.ru</td>
+                    <td>krasavchik</td>
+                    <td>
+                        <button><img src="img/copy.svg" alt=""></button>
+                    </td>
+                    <td>
+                        <button><img src="img/copy.svg" alt=""></button>
+                    </td>
+                    <td>$30/m</td>
+                    <td>
+                        <button><img src="img/copy.svg" alt=""></button>
+                    </td>
+                    <td>22.06.20 23:29</td>
+                    <td>
+                        <button><img src="img/mail.svg" alt=""></button>
+                        <button><img src="img/link_button.svg" alt=""></button>
+                        <button><img src="img/like.svg" alt=""></button>
+                        <button><img src="img/download.svg" alt=""></button>
+                        <button><img src="img/edit.svg" alt=""></button>
+                        <button><img src="img/delete.svg" alt=""></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="img/status_green.svg" alt="" class="status_img">
+                    </td>
+                    <td>Renewal</td>
+                    <td>beybaris@mail.ru</td>
+                    <td>krasavchik</td>
+                    <td>
+                        <button><img src="img/copy.svg" alt=""></button>
+                    </td>
+                    <td>
+                        <button><img src="img/copy.svg" alt=""></button>
+                    </td>
+                    <td>$30/m</td>
+                    <td>
+                        <button><img src="img/copy.svg" alt=""></button>
+                    </td>
+                    <td>22.06.20 23:29</td>
+                    <td>
+                        <button><img src="img/mail.svg" alt=""></button>
+                        <button><img src="img/link_button.svg" alt=""></button>
+                        <button><img src="img/like.svg" alt=""></button>
+                        <button><img src="img/download.svg" alt=""></button>
+                        <button><img src="img/edit.svg" alt=""></button>
+                        <button><img src="img/delete.svg" alt=""></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="img/status_green.svg" alt="" class="status_img">
+                    </td>
+                    <td>Renewal</td>
+                    <td>beybaris@mail.ru</td>
+                    <td>krasavchik</td>
+                    <td>
+                        <button><img src="img/copy.svg" alt=""></button>
+                    </td>
+                    <td>
+                        <button><img src="img/copy.svg" alt=""></button>
+                    </td>
+                    <td>$30/m</td>
+                    <td>
+                        <button><img src="img/copy.svg" alt=""></button>
+                    </td>
+                    <td>22.06.20 23:29</td>
+                    <td>
+                        <button><img src="img/mail.svg" alt=""></button>
+                        <button><img src="img/link_button.svg" alt=""></button>
+                        <button><img src="img/like.svg" alt=""></button>
+                        <button><img src="img/download.svg" alt=""></button>
+                        <button><img src="img/edit.svg" alt=""></button>
+                        <button><img src="img/delete.svg" alt=""></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="img/status_green.svg" alt="" class="status_img">
+                    </td>
+                    <td>Renewal</td>
+                    <td>beybaris@mail.ru</td>
+                    <td>krasavchik</td>
+                    <td>
+                        <button><img src="img/copy.svg" alt=""></button>
+                    </td>
+                    <td>
+                        <button><img src="img/copy.svg" alt=""></button>
+                    </td>
+                    <td>$30/m</td>
+                    <td>
+                        <button><img src="img/copy.svg" alt=""></button>
+                    </td>
+                    <td>22.06.20 23:29</td>
+                    <td>
+                        <button><img src="img/mail.svg" alt=""></button>
+                        <button><img src="img/link_button.svg" alt=""></button>
+                        <button><img src="img/like.svg" alt=""></button>
+                        <button><img src="img/download.svg" alt=""></button>
+                        <button><img src="img/edit.svg" alt=""></button>
+                        <button><img src="img/delete.svg" alt=""></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="img/status_green.svg" alt="" class="status_img">
+                    </td>
+                    <td>Renewal</td>
+                    <td>beybaris@mail.ru</td>
+                    <td>krasavchik</td>
+                    <td>
+                        <button><img src="img/copy.svg" alt=""></button>
+                    </td>
+                    <td>
+                        <button><img src="img/copy.svg" alt=""></button>
+                    </td>
+                    <td>$30/m</td>
+                    <td>
+                        <button><img src="img/copy.svg" alt=""></button>
+                    </td>
+                    <td>22.06.20 23:29</td>
+                    <td>
+                        <button><img src="img/mail.svg" alt=""></button>
+                        <button><img src="img/link_button.svg" alt=""></button>
+                        <button><img src="img/like.svg" alt=""></button>
+                        <button><img src="img/download.svg" alt=""></button>
+                        <button><img src="img/edit.svg" alt=""></button>
+                        <button><img src="img/delete.svg" alt=""></button>
+                    </td>
+                </tr>
+            </table>
+            <div class="table_footer">
+                <div class="status_check">
+                    <button><img src="img/checkbox.svg" alt=""></button>
+                    <span>Status</span>
+                </div>
+                <div class="pagination">
+                    <span>1-5 of 5</span>
+                    <button><img src="img/arrow_left.svg" alt=""></button>
+                    <button><img src="img/arrow_right.svg" alt=""></button>
+                </div>
+            </div>
+        </div>
     </div>
 </main>
 </body>

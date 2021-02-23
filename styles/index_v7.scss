@@ -314,7 +314,7 @@ body {
 
     background: url(../img/screen4/back.svg) no-repeat center;
     background-size: cover;
-    background-position-y: 160px;
+    background-position-y: 80px;
   }
 
   #screen4_device {
@@ -524,22 +524,37 @@ body {
 
   .anim.anim_right {
     animation-name: slide_right;
+    -webkit-animation-name: slide_right;
+    -moz-animation-name: slide_right;
+    -o-animation-name: slide_right;
   }
 
   .anim.anim_left {
     animation-name: slide_left;
+    -webkit-animation-name: slide_left;
+    -moz-animation-name: slide_left;
+    -o-animation-name: slide_left;
   }
 
   .anim.anim_top {
     animation-name: slide_top;
+    -webkit-animation-name: slide_top;
+    -moz-animation-name: slide_top;
+    -o-animation-name: slide_top;
   }
 
   .anim.anim_bottom_right {
     animation-name: slide_bottom_right;
+    -webkit-animation-name: slide_bottom_right;
+    -moz-animation-name: slide_bottom_right;
+    -o-animation-name: slide_bottom_right;
   }
 
   .anim.anim_bottom_left {
     animation-name: slide_bottom_right;
+    -webkit-animation-name: slide_bottom_right;
+    -moz-animation-name: slide_bottom_right;
+    -o-animation-name: slide_bottom_right;
   }
 
 
@@ -550,22 +565,37 @@ body {
 
   .screen.anim {
     animation: 1s ease-in-out forwards;
+    -webkit-animation: 1s ease-in-out forwards;
+    -moz-animation: 1s ease-in-out forwards;
+    -o-animation: 1s ease-in-out forwards;
   }
 
   .screen.anim.anim_right {
     animation-name: slide_right;
+    -webkit-animation-name: slide_right;
+    -moz-animation-name: slide_right;
+    -o-animation-name: slide_right;
   }
 
   .screen.anim.anim_left {
     animation-name: slide_left;
+    -webkit-animation-name: slide_left;
+    -moz-animation-name: slide_left;
+    -o-animation-name: slide_left;
   }
 
   .screen.anim.anim_top {
     animation-name: slide_top;
+    -webkit-animation-name: slide_top;
+    -moz-animation-name: slide_top;
+    -o-animation-name: slide_top;
   }
 
   .screen.anim.anim_bottom_left {
     animation-name: slide_bottom_right;
+    -webkit-animation-name: slide_bottom_right;
+    -moz-animation-name: slide_bottom_right;
+    -o-animation-name: slide_bottom_right;
   }
 }
 
