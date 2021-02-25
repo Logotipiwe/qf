@@ -84,7 +84,7 @@ body {
           body .modal .modal_content .m_body .m_checks .m_check {
             align-items: center;
             margin-bottom: 20px;
-            margin-right: 20px; }
+            margin-right: 16px; }
             body .modal .modal_content .m_body .m_checks .m_check input[type=checkbox] {
               appearance: none;
               height: 30px;
