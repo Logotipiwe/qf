@@ -16,6 +16,142 @@
 <div id="back_item_4" class="back_item"></div>
 <div id="back_item_5" class="back_item"></div>
 <div id="back_item_6" class="back_item"></div>
+<div class="modal" id="modal_1">
+    <div class="modal_content">
+        <div class="m_header">
+            <img src="img/link_hover.svg" alt="">
+            <span>Название модалки</span>
+        </div>
+        <div class="m_body">
+            <div class="field">
+                <p class="field_title">Expires</p>
+                <div class="field_input">
+                    <div class="field_img">
+                        <img src="img/calendar.svg" alt="">
+                    </div>
+                    <input value="30">
+                </div>
+            </div>
+            <div class="field">
+                <p class="field_title">Cooldown</p>
+                <div class="field_input">
+                    <div class="field_img">
+                        <img src="img/clock.svg" alt="">
+                    </div>
+                    <input>
+                </div>
+            </div>
+            <div class="field">
+                <p class="field_title">Price</p>
+                <div class="field_input">
+                    <div class="field_img">
+                        <img src="img/dollar.svg" alt="">
+                    </div>
+                    <input>
+                </div>
+            </div>
+            <div class="m_checks">
+                <div class="m_check">
+                    <input type="checkbox">
+                    <span>Renewable</span>
+                </div>
+                <div class="m_check">
+                    <input type="checkbox">
+                    <span>Lifetime</span>
+                </div>
+                <div class="m_check">
+                    <input type="checkbox">
+                    <span>Beta</span>
+                </div>
+            </div>
+            <button class="button">
+                <img src="img/confirm.svg" alt="">
+                <span>Create</span>
+            </button>
+        </div>
+    </div>
+</div>
+<div class="modal" id="modal_2">
+    <div class="modal_content">
+        <div class="m_header">
+            <img src="img/link_hover.svg" alt="">
+            <span>Название модалки</span>
+        </div>
+        <div class="m_body">
+            <div class="field">
+                <p class="field_title">Password</p>
+                <div class="field_input">
+                    <div class="field_img">
+                        <img src="img/lock.svg" alt="">
+                    </div>
+                    <input value="30">
+                </div>
+            </div>
+            <div class="field">
+                <p class="field_title">Stock</p>
+                <div class="field_input">
+                    <div class="field_img">
+                        <img src="img/bottom_bar.svg" alt="">
+                    </div>
+                    <input value="30">
+                </div>
+            </div>
+            <div class="field">
+                <p class="field_title">Expires</p>
+                <div class="field_input">
+                    <div class="field_img">
+                        <img src="img/calendar.svg" alt="">
+                    </div>
+                    <input value="30">
+                </div>
+            </div>
+            <div class="field">
+                <p class="field_title">Cooldown</p>
+                <div class="field_input">
+                    <div class="field_img">
+                        <img src="img/clock.svg" alt="">
+                    </div>
+                    <input>
+                </div>
+            </div>
+            <div class="field">
+                <p class="field_title">Price</p>
+                <div class="field_input">
+                    <div class="field_img">
+                        <img src="img/dollar.svg" alt="">
+                    </div>
+                    <input>
+                </div>
+            </div>
+            <div class="m_checks">
+                <div class="m_check">
+                    <input type="checkbox">
+                    <span>Renewable</span>
+                </div>
+                <div class="m_check">
+                    <input type="checkbox">
+                    <span>Lifetime</span>
+                </div>
+                <div class="m_check">
+                    <input type="checkbox">
+                    <span>Beta</span>
+                </div>
+                <div class="m_check">
+                    <input type="checkbox">
+                    <span>Autobind</span>
+                </div>
+                <div class="m_check">
+                    <input type="checkbox">
+                    <span>Check burners</span>
+                </div>
+            </div>
+            <button class="button">
+                <img src="img/confirm.svg" alt="">
+                <span>Create</span>
+            </button>
+        </div>
+    </div>
+</div>
 <div id="side">
     <div id="logo">
         <a href="../">
@@ -94,17 +230,17 @@
             </div>
         </div>
         <div id="buttons_row">
-            <button class="button">
+            <button class="button button_hoverable">
                 <img src="img/discord_logo.svg" alt="" class="button_img">
                 <img src="img/discord_logo_hover.svg" alt="" class="button_img_hover">
                 <span>Join Discord</span>
             </button>
-            <button class="button">
+            <button class="button button_hoverable">
                 <img src="img/link.svg" alt="" class="button_img">
                 <img src="img/link_hover.svg" alt="" class="button_img_hover">
                 <span>Unbind Key</span>
             </button>
-            <button class="button">
+            <button class="button button_hoverable">
                 <img src="img/logout.svg" alt="" class="button_img">
                 <img src="img/logout_hover.svg" alt="" class="button_img_hover">
                 <span>Sign Out</span>
@@ -113,7 +249,7 @@
     </div>
     <div class="main_content" id="main_content_2" style="display: none">
         <div class="interface">
-            <button class="button">
+            <button class="button" id="add_new_btn_1">
                 <img src="img/plus.svg" alt="">
                 <span>Add new</span>
             </button>
@@ -126,20 +262,20 @@
             <div class="head_back"></div>
             <table border="0" cellpadding="0" cellspacing="0">
                 <thead>
-                    <tr>
-                        <th>Status</th>
-                        <th>Stock</th>
-                        <th>Sold</th>
-                        <th>Password</th>
-                        <th>Link</th>
-                        <th>Price</th>
-                        <th>Trial days</th>
-                        <th>Initial payment</th>
-                        <th>Sellout time</th>
-                        <th>Created at <img src="img/arrow_down.svg" alt="" class="arr_down"></th>
-                        <th>Last style</th>
-                        <th>Actions</th>
-                    </tr>
+                <tr>
+                    <th>Status</th>
+                    <th>Stock</th>
+                    <th>Sold</th>
+                    <th>Password</th>
+                    <th>Link</th>
+                    <th>Price</th>
+                    <th>Trial days</th>
+                    <th>Initial payment</th>
+                    <th>Sellout time</th>
+                    <th>Created at <img src="img/arrow_down.svg" alt="" class="arr_down"></th>
+                    <th>Last style</th>
+                    <th>Actions</th>
+                </tr>
                 </thead>
                 <tr>
                     <td>
@@ -267,7 +403,7 @@
     </div>
     <div class="main_content" id="main_content_3" style="display: none">
         <div class="interface">
-            <button class="button">
+            <button class="button" id="add_new_btn_2">
                 <img src="img/plus.svg" alt="">
                 <span>Add new</span>
             </button>

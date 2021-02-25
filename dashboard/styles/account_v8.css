@@ -10,6 +10,118 @@ body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   background-color: #F3F5F9; }
+  body .modal {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    color: #2A356B;
+    font-weight: 700;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    display: none;
+    opacity: 0;
+    transition: .4s opacity; }
+    body .modal .modal_content {
+      width: 400px;
+      margin: auto;
+      padding-bottom: 40px;
+      border-radius: 10px;
+      flex-direction: column;
+      background-color: #FAFBFC;
+      max-height: 80vh;
+      overflow-y: scroll; }
+      body .modal .modal_content .m_header {
+        flex-shrink: 0;
+        height: 100px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(360deg, rgba(221, 236, 255, 0.17) -5%, rgba(221, 236, 255, 0.0204) 115%); }
+        body .modal .modal_content .m_header img {
+          margin-right: 25px;
+          height: 30px; }
+        body .modal .modal_content .m_header span {
+          font-size: 15px; }
+      body .modal .modal_content .m_body {
+        padding: 0 28px;
+        flex-direction: column; }
+        body .modal .modal_content .m_body .field {
+          flex-direction: column;
+          margin: 21px auto 0;
+          width: 100%; }
+          body .modal .modal_content .m_body .field .field_title {
+            color: rgba(79, 86, 122, 0.22);
+            font-size: 10px;
+            margin: 0 0 15px; }
+          body .modal .modal_content .m_body .field .field_input {
+            background: rgba(0, 110, 239, 0.02);
+            border: 1px solid #C0C8D1;
+            border-radius: 8px;
+            height: 48px; }
+            body .modal .modal_content .m_body .field .field_input .field_img {
+              width: 49px;
+              margin: 10px 15px 10px 0;
+              border-right: 1px #C0C8D1 solid; }
+              body .modal .modal_content .m_body .field .field_input .field_img img {
+                height: 15px;
+                margin: auto; }
+            body .modal .modal_content .m_body .field .field_input input {
+              border: none;
+              outline: none;
+              background: none;
+              flex-grow: 1;
+              color: #2A356B;
+              font-weight: 600;
+              font-size: 15px;
+              height: 30px;
+              align-self: center; }
+        body .modal .modal_content .m_body .m_checks {
+          margin: 20px 0 0;
+          width: 100%;
+          flex-wrap: wrap;
+          font-size: 11px; }
+          body .modal .modal_content .m_body .m_checks .m_check {
+            align-items: center;
+            margin-bottom: 20px;
+            margin-right: 20px; }
+            body .modal .modal_content .m_body .m_checks .m_check input[type=checkbox] {
+              appearance: none;
+              height: 30px;
+              width: 30px;
+              background: rgba(0, 110, 239, 0.08);
+              border: 1.5px solid rgba(0, 110, 239, 0.49);
+              border-radius: 5px;
+              outline: none;
+              margin-right: 21px; }
+            body .modal .modal_content .m_body .m_checks .m_check input[type=checkbox]:checked {
+              background-size: 100%;
+              background: #006EEF url("../img/check.svg") no-repeat center; }
+          body .modal .modal_content .m_body .m_checks .m_check:last-of-type {
+            margin-right: 0; }
+        body .modal .modal_content .m_body .button img {
+          height: 26px; }
+        body .modal .modal_content .m_body .button span {
+          font-size: 13px;
+          margin-left: 15px; }
+    body .modal .modal_content::-webkit-scrollbar {
+      width: 11px;
+      height: 18px; }
+    body .modal .modal_content::-webkit-scrollbar-thumb {
+      height: 6px;
+      border: 4px solid rgba(0, 0, 0, 0);
+      background-clip: padding-box;
+      -webkit-border-radius: 7px;
+      background-color: rgba(0, 0, 0, 0.07);
+      -webkit-box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05), inset 1px 1px 0px rgba(0, 0, 0, 0.05); }
+    body .modal .modal_content::-webkit-scrollbar-button {
+      width: 0;
+      height: 0;
+      display: none; }
+    body .modal .modal_content::-webkit-scrollbar-corner {
+      background-color: transparent; }
+  body .modal_opened {
+    opacity: 1; }
   body #side {
     width: 289px;
     padding: 45px;
@@ -310,12 +422,14 @@ body {
     body .button .button_img_hover {
       display: none; }
   body .button:hover {
+    background: #177def; }
+  body .button_hoverable:hover {
     background: linear-gradient(0deg, rgba(2, 105, 214, 0.12) -51.35%, rgba(16, 121, 255, 0.1) 118.92%);
     border: 1px solid rgba(1, 114, 247, 0.68);
     color: #006EEF; }
-    body .button:hover .button_img_hover {
+    body .button_hoverable:hover .button_img_hover {
       display: block; }
-    body .button:hover .button_img {
+    body .button_hoverable:hover .button_img {
       display: none; }
   body #buttons_row .button:not(:last-child) {
     margin-right: 26px; }
