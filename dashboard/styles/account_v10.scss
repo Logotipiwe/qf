@@ -738,6 +738,16 @@ body {
     animation-name: back_6;
     animation-duration: 75s;
   }
+  #back_item_7 {
+    animation-delay: 10s;
+    animation-name: back_7;
+    animation-duration: 60s;
+  }
+  #back_item_8 {
+    animation-delay: 0s;
+    animation-name: back_8;
+    animation-duration: 50s;
+  }
 }
 
 @keyframes back_1 {
@@ -871,7 +881,50 @@ body {
   }
 }
 
-@media (max-width: 1400px) {
+@keyframes back_7 {
+  from {
+    display: block;
+    top: calc(100vh - 400px);
+    right: calc(100vw + 800px);
+    transform: rotate(0deg);
+  }
+  60% {
+    display: none;
+    top: -10vh;
+    right: -800px;
+    transform: rotate(230deg);
+  }
+  100% {
+    display: none;
+    top: 800px;
+    right: -800px;
+    transform: rotate(400deg);
+  }
+}
+
+@keyframes back_8 {
+  from {
+    display: block;
+    top: -800px;
+    left: 100px;
+    transform: rotate(150deg);
+  }
+  60% {
+    display: none;
+    top: calc(100vh + 800px);
+    transform: rotate(-200deg);
+  }
+  100% {
+    display: none;
+    top: calc(100vh + 800px);
+    transform: rotate(-200deg);
+  }
+}
+
+@media (min-width: 1800px) {
   body {
+    .main_content{
+      transform: scale(1.15);
+    }
   }
 }
