@@ -1,8 +1,0 @@
-@media (max-width: 400px) {
-  body #form {
-    width: 90%; }
-    body #form h1 {
-      font-size: 18px; }
-    body #form button {
-      padding: 10px 20px;
-      font-size: 14px; } }
